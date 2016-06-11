@@ -14,7 +14,7 @@
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
          <?php 
             wp_nav_menu( array(
-'menu' => 'Header_Menu',
+'menu' => 'main_nav',
 'menu_class'      => 'nav navbar-nav', 
                 'container'=> '',
 ) );
