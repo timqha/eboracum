@@ -52,8 +52,10 @@
             </div>
         </div>
         <div class="col-lg-3">
+           
             <div class="col-lg-12">
                 <input class="post-search" type="search" placeholder="* SEARCH">
+                <?php get_sidebar();?>
                 <div class="aside">
                     <div class="aside-title">
                         recent posts
