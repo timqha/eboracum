@@ -1,4 +1,6 @@
-<section class="container content-text">
+<?php get_header()?>
+<?php get_header("custom1"); ?>
+   <section class="container content-text">
     <div class="col-lg-12">
         <!--        <div class="row">-->
         <div class="col-lg-12">
@@ -106,8 +108,9 @@
                         <li><a href="#">Thomas Tudway Project</a></li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </div>
 </section>
+
+<?php get_footer()?>
