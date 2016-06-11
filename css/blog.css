@@ -16,16 +16,19 @@
 
 .post-blog img {
     width: 100%;
+    height: 295px;
 }
 
 .title-post-base {
     font-size: 2.1em;
 }
 
-.title-post {
+.title-post  a{
     font-size: 1.55em;
     color: #292b41;
 }
+
+
 
 .date-post {
     font-size: 0.875em;

@@ -12,8 +12,15 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+         <?php 
+            wp_nav_menu( array(
+'menu' => 'Header_Menu',
+'menu_class'      => 'nav navbar-nav', 
+                'container'=> '',
+) );
+            ?>
+          <!--   <ul class="nav navbar-nav">
+                 Hidden li included to remove active class from about link when scrolled up past about section 
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
@@ -40,7 +47,7 @@
                     <a class="page-scroll" target="_blank" href="http://facebook.com/EboracumBaroque"><i
                             class="fa fa-facebook"></i></a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
         <!-- /.navbar-collapse -->
     </div>
