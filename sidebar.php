@@ -4,7 +4,10 @@
         </div>
         <ul class="nav aside-nav">
             <?php 
-             wp_list_categories("title_li=.");
+             wp_list_categories(array(
+	'exclude'            => '5',
+	'title_li'           => '',
+));
             ?>
         </ul>
     </div>

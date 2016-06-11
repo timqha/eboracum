@@ -62,44 +62,7 @@
             <div class="col-lg-12">
                 <input class="post-search" type="search" placeholder="* SEARCH">
                 <?php get_sidebar();?>
-                <div class="aside">
-                    <div class="aside-title">
-                        recent posts
-                    </div>
-                    <ul class="nav aside-nav">
-                        <li><a href="#">New CD ‘Music for Wimpole Hall’ is now available</a></li>
-                        <li><a href="#">Another great conert with Terry Deary</a></li>
-                        <li><a href="#">New concert dates are confirmed with NT York</a></li>
-                        <li><a href="#">This is yet another headline</a></li>
-                        <li><a href="#">So is this, we have really exciting news</a></li>
-                    </ul>
-                </div>
 
-                <div class="aside">
-                    <div class="aside-title">
-                        archives
-                    </div>
-                    <ul class="nav aside-nav">
-                        <li><a href="#">April 2016</a></li>
-                        <li><a href="#">February 2016</a></li>
-                        <li><a href="#">December 2015</a></li>
-                        <li><a href="#">October 2015</a></li>
-                        <li><a href="#">August 2015</a></li>
-                    </ul>
-                </div>
-
-                <div class="aside">
-                    <div class="aside-title">
-                        categories
-                    </div>
-                    <ul class="nav aside-nav">
-                        <li><a href="#">Reviews</a></li>
-                        <li><a href="#">Concerts</a></li>
-                        <li><a href="#">General</a></li>
-                        <li><a href="#">BaRocks</a></li>
-                        <li><a href="#">Thomas Tudway Project</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>
