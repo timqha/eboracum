@@ -4,9 +4,12 @@
     <div class="col-lg-12">
         <!--        <div class="row">-->
         <div class="col-lg-12">
-            <div class="barocks title-post-base"><img src="<?php echo bloginfo('template_url'); ?>/img/atr-symbol.png"
-                                                      alt="art">
-                OUR NEWS!
+            <div class="barocks">
+                <div class="barocks-img"><img
+                        src="<?php echo bloginfo('template_url'); ?>/img/atr-symbol.png"
+                        alt="art"></div>
+                <div class="barocks-title">OUR NEWS!
+                </div>
             </div>
         </div>
         <!--        </div>-->

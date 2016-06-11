@@ -21,14 +21,22 @@
     left: 0;
     width: 27px;
     height: 27px;
-    background-color: #665957;
+    background-color: rgba(197, 193, 191, 0.5);
     z-index: 99999;
     text-align: center;
     padding-top: 3px;
 }
 
-.burger i a {
-    color: #fff;
+@media (max-width: 767px) {
+
+    .burger {
+        top: 14px;
+        left: 18px;
+    }
+}
+
+.burger a {
+    color: #fff !important;
 }
 
 .intro {
