@@ -1,0 +1,45 @@
+.shop-1-bgc {
+    background-color: #f3f2f2;
+}
+
+.shop-1-bgc .title {
+    padding: 50px 0 20px 15px;
+    font-family: "Crimson Text", serif;
+    font-size: 28.97pt;
+    font-weight: 600;
+    color: #0c0c2f;
+}
+
+.shop-1-bgc .text {
+    padding: 0 0 30px 15px;
+    font-family: "Crimson Text", serif;
+    font-size: 14pt;
+    color: #706a65;
+}
+
+.button-my-blue {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.794635em;
+    background-color: #303056;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    min-width: 100px;
+    min-height: 25px;
+    padding-top: 2px;
+}
+
+.ticket-section {
+    background-color: #f3f2f2;
+}
+
+.ticket-section .navbar-tabs-custom{
+    padding: 10px 0;
+}
+
+.ticket-section .tb-events-scroll{
+    height: 367px;
+}

@@ -11,48 +11,144 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row shop-1-bgc">
             <div class="col-md-5">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam ducimus est nisi perferendis quam quidem reiciendis rerum sed suscipit? Amet cum et inventore maiores neque officia perferendis quo quos.
+                <div class="row">
+                    <img class="imgw" src="<?php echo bloginfo('template_url'); ?>/img/shop-1.jpg"
+                         alt="art">
+                </div>
             </div>
             <div class="col-md-7 ">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque dolorum eius enim eveniet fugiat illo ipsa, laboriosam, libero nemo nihil praesentium qui quia suscipit tenetur unde ut velit voluptatibus?
+                <div class="title">music for wimpole hall</div>
+                <div class="text">The music on this CD features the music that Thomas Tudway composed for the
+                    consecration of the Chapel at Wimpole in 1721. The Wimpole Te Deum and Jubilate are written on a
+                    grand scale for an orchestra including trumpet and oboes.
+                </div>
+                <div class="col-xs-7">
+                    <img class="imgw" src="<?php echo bloginfo('template_url'); ?>/img/our-new-CD.png"
+                         alt="art">
+                </div>
+                <div class="col-xs-offset-2 col-xs-3">
+                    <button class="button-my-blue">
+                        buy online
+                    </button>
+                </div>
             </div>
         </div>
+</section>
+<section class=" content-text ticket-section">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <ul class="nav navbar-tabs-custom">
-                    <li class="active"><a class="title" data-toggle="tab" href="#project">project</a></li>
-                    <li><a class="title" data-toggle="tab" href="#about">about tudway</a></li>
-                    <li><a class="title" data-toggle="tab" href="#CD">CD</a></li>
+                    <li class="active"><a class="title" href="#tickets">TICKETS</a></li>
+                    <li><a class="title" href="#music">MUSIC</a></li>
+                    <li><a class="title" href="#support_us">support us</a></li>
+                    <li><a class="title" href="#other">other</a></li>
                 </ul>
-                <div class="tab-content">
-                    <div id="project" class="tab-pane fade in active">
-                        <div class="barocks">
-                            <div class="barocks-img"><img src="<?php echo bloginfo('template_url'); ?>/img/atr-symbol.png"
-                                                          alt="art"></div>
-                            <div class="barocks-title">THOMAS TUDWAY
-                                PROJECT
-                            </div>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit dui dolor, eget fermentum
-                            ante
-                            ultricies ac. Quisque imperdiet eros quis ex tempor, eget rutrum lorem mattis. Proin
-                            sollicitudin
-                            suscipit vulputate. Nam faucibus porttitor tempus. Praesent rutrum vehicula enim eget facilisis.
-                            Curabitur tempor metus ut dui tempus, non elementum nunc finibus. Sed vitae hendrerit magna.
-                        </p>
-
-                        <p>Fusce finibus vel dolor eget sollicitudin. In rutrum egestas tortor sit amet gravida.
-                            Pellentesque
-                            volutpat urna at pellentesque sagittis. Praesent vel tortor eget metus luctus dignissim. Donec
-                            tincidunt mauris quis viverra porta. Cras sed condimentum neque, vel euismod ligula. Vestibulum
-                            ante
-                            ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eleifend, odio id
-                            blandit vestibulum, odio lectus viverra enim, id dignissim enim libero ac velit. Sed et
-                            elementum
-                            diam.</p>
+                <div class="row">
+                    <div class="col-lg-12 tb-events-scroll">
+                        <table class="table-events">
+                            <tr>
+                                <td>
+                                    <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
+                                         alt="art">
+                                </td>
+                                <td class="tac">
+                                    <div class="big-number">
+                                        25
+                                    </div>
+                                    <div class="month">january</div>
+                                </td>
+                                <td>
+                                    <div class="table-title">
+                                        music for good friday
+                                    </div>
+                                    <div>
+                                        Holy Trinity Church, Micklegate, York<br>
+                                        19.00 - 22.00
+                                    </div>
+                                </td>
+                                <td class="text-even">
+                                    Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                    the
+                                    start classical music careers.
+                                </td>
+                                <td>
+                                    <div>
+                                        <button>
+                                            book online
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="<?php echo bloginfo('template_url'); ?>/img/album-2.jpg"
+                                         alt="art">
+                                </td>
+                                <td class="tac">
+                                    <div class="big-number">
+                                        16
+                                    </div>
+                                    <div class="month">march</div>
+                                </td>
+                                <td>
+                                    <div class="table-title">
+                                        concert
+                                    </div>
+                                    <div>
+                                        tattershall castle, lincs.<br>
+                                        19.00 - 22.00
+                                    </div>
+                                </td>
+                                <td class="text-even">
+                                    Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                    the
+                                    start classical music careers.
+                                </td>
+                                <td>
+                                    <div>
+                                        <button>
+                                            book online
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
+                                         alt="art">
+                                </td>
+                                <td class="tac">
+                                    <div class="big-number">
+                                        23
+                                    </div>
+                                    <div class="month">april</div>
+                                </td>
+                                <td>
+                                    <div class="table-title">
+                                        if music be the food of love
+                                    </div>
+                                    <div>
+                                        st benet’s church, cambridge<br>
+                                        19.00 - 22.00
+                                    </div>
+                                </td>
+                                <td class="text-even">
+                                    Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                    the
+                                    start classical music careers.
+                                </td>
+                                <td>
+                                    <div>
+                                        <button>
+                                            book online
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
 

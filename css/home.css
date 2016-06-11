@@ -134,10 +134,12 @@ table.table-events {
     border-collapse: separate;
     border-spacing: 0 11px;
 }
-.tb-events-scroll{
+
+.tb-events-scroll {
     overflow-y: scroll;
     height: 281px;
 }
+
 .table-events tr td:nth-child(1) {
     width: 12%;
 }
@@ -156,6 +158,7 @@ table.table-events {
 
 .table-events img {
     width: 100%;
+    min-width: 98px;
 }
 
 .table-events tr {
@@ -189,22 +192,49 @@ table.table-events {
     white-space: nowrap;
 }
 
-.events .barocks{
+.events .barocks {
     padding: 11px 0 21px 0;
 }
 
-.filter{
-
+.filter {
+    position: relative;
+    list-style: none;
+    padding: 5px 15px;
 }
 
-/*.table-events tr td:nth-child(3):after {*/
-/*content: '';*/
-/*position: absolute;*/
-/*left: 0;*/
-/*top: 23%;*/
-/*height: 66%;*/
-/*background-color: #dedad8;*/
-/*width: 2px;*/
-/*}*/
+.filter li a {
+    font-size: 8pt;
+    color: #0c0c2f;
+}
+
+.filter .active:before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    width: 2px;
+    height: 14px;
+    background-color: #0c0f2d;
+}
+
+.events-year {
+    padding: 5px;
+    font-size: 13pt;
+    font-family: "Open Sans", sans-serif;
+    color: #706a65;
+}
+
+.table-events tr td{
+    position: relative;
+}
+.table-events tr td:nth-child(3):after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12%;
+    height: 78%;
+    background-color: #dedad8;
+    width: 2px;
+}
 
 /*events*/
