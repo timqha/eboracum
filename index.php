@@ -222,5 +222,4 @@
         </div>
     </div>
 </section>
-123
 <?php //get_footer(); ?>
