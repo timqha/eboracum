@@ -221,6 +221,12 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     345353
 </section>
+=======
+</section>hgfdfgghg
+gfhfdgdsfgsgf
+jhgfgdgfjh
+>>>>>>> origin/master
 <?php //get_footer(); ?>
