@@ -12,14 +12,16 @@
     <link href='https://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=IM+Fell+English+SC' rel='stylesheet' type='text/css'>
 
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
     <!--[if lt IE 9]>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
     <![endif]-->
-    
+
+
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/jquery.min.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/bootstrap.min.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/app.js"></script>
-    <?php wp_head(); ?>
 </head>
 <body>
 

@@ -73,11 +73,7 @@
                     </div>
                 </div>
                 <div class="col-md-8">
-
-                    <iframe width="100%" height="540px"
-                            src="https://www.youtube-nocookie.com/embed/5YOX8sYlP3M?rel=0&amp;controls=0"
-                            frameborder="0" allowfullscreen></iframe>
-
+                    <iframe width="100%" height="540" src="https://www.youtube-nocookie.com/embed/5YOX8sYlP3M?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

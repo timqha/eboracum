@@ -33,10 +33,12 @@
                     <a class="page-scroll" href="#contact">contact</a>
                 </li>
                 <li>
-                    <a class="page-scroll" target="_blank" href="http://twitter.com/eboracumbaroque"><i class="fa fa-twitter"></i></a>
+                    <a class="page-scroll" target="_blank" href="http://twitter.com/eboracumbaroque"><i
+                            class="fa fa-twitter"></i></a>
                 </li>
                 <li>
-                    <a class="page-scroll" target="_blank" href="http://facebook.com/EboracumBaroque"><i class="fa fa-facebook"></i></a>
+                    <a class="page-scroll" target="_blank" href="http://facebook.com/EboracumBaroque"><i
+                            class="fa fa-facebook"></i></a>
                 </li>
             </ul>
         </div>
@@ -51,11 +53,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <p><img src="<?php echo bloginfo('template_url'); ?>/img/logo.png"
-                            alt="art"></p>
-                    <p><img src="<?php echo bloginfo('template_url'); ?>/img/logo.png"
-                            alt="art"></p>
-                    <p class="intro-text">the guardian</p>
+                    <div class="logo-head-1"><img class="logo-head"
+                                                  src="<?php echo bloginfo('template_url'); ?>/img/logo-head.png"
+                                                  alt="art"></div>
+                    <div><img class="logo-head-2" src="<?php echo bloginfo('template_url'); ?>/img/stylich.png"
+                              alt="art"></div>
+                    <div class="intro-text">the guardian</div>
                     <a href="#about" class="btn btn-circle page-scroll">
                         <i class="fa fa-angle-down animated"></i>
                     </a>
