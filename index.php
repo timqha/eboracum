@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php get_header("custom1"); ?>
 
-<section style="display: none" id="about" class="video-section">
+<section  id="about" class="video-section">
     <div class="container">
         <div class="col-lg-12">
 
@@ -82,7 +82,7 @@
     </div>
 </section>
 
-<section style="display: none" class="container content-text">
+<section class="container content-text">
     <div class="col-lg-12">
         <div class="row">
             <div class="col-lg-4 col-sm-6">
@@ -179,7 +179,7 @@
     </div>
 </section>
 
-<section style="display: none" class="container content-text guard" id="guard">
+<section class="container content-text guard" id="guard">
     <div class="row">
         <div class="col-lg-12">
             <div class="row">
