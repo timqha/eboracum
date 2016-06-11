@@ -140,7 +140,7 @@ a:focus {
 .navbar-custom {
     padding: 15px 0;
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    /*border-bottom: 1px solid rgba(255, 255, 255, .3);*/
     text-transform: uppercase;
     font-family: 'IM Fell English SC', serif;
     background-color: #292b41;
@@ -150,6 +150,13 @@ a:focus {
     padding: 15px 0;
     background-color: transparent;
 }
+@media (max-width: 767px) {
+    .navbar-custom.navbar-custom-full {
+        padding: 0;
+        background-color: #292b41;
+    }
+}
+
 
 .navbar-custom .navbar-brand:focus {
     outline: 0;

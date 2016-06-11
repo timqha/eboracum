@@ -1,12 +1,15 @@
 <?php get_header()?>
-<?php get_header("custom1"); ?>
+<?php get_header("custom2"); ?>
    <section class="container content-text">
     <div class="col-lg-12">
         <!--        <div class="row">-->
         <div class="col-lg-12">
-            <div class="barocks title-post-base"><img src="<?php echo bloginfo('template_url'); ?>/img/atr-symbol.png"
-                                                      alt="art">
-                OUR NEWS!
+            <div class="barocks">
+                <div class="barocks-img"><img
+                        src="<?php echo bloginfo('template_url'); ?>/img/atr-symbol.png"
+                        alt="art"></div>
+                <div class="barocks-title">OUR NEWS!
+                </div>
             </div>
         </div>
         <!--        </div>-->
