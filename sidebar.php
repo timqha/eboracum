@@ -1,15 +1,11 @@
-<?php if ( is_active_sidebar( 'true_foot' ) ) :
-	dynamic_sidebar( 'true_foot' );
-else :
-	// код по умолчанию на случай, если сайдбар пустой
-endif;?>
-
     <div class="aside">
         <div class="aside-title">
             Categories
         </div>
         <ul class="nav aside-nav">
-            <?php wp_list_categories("title_li=");?>
+            <?php 
+             wp_list_categories("title_li=.");
+            ?>
         </ul>
     </div>
     <div class="aside">
