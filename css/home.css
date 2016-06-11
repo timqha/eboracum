@@ -1,0 +1,88 @@
+/* global */
+.imgw {
+    width: 100%;
+}
+
+.text-deco {
+    border-bottom: 1px #a7a39a solid;
+}
+
+
+
+/* global */
+
+/* video */
+
+.video {
+    position: relative;
+    top: -1px;
+}
+
+.video-section {
+    background-color: #f3f2f2;
+}
+
+/* video */
+
+figcaption {
+    text-align: center;
+    color: #a7a39a;
+    padding: 10px 0;
+    background-color: #292b44;
+}
+
+.tac{
+    padding: 0 10px;
+    text-align: center;
+}
+
+.big-number {
+    font-size: 22.19pt;
+    color:#0c0f2d;
+}
+
+.month {
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 10pt;
+    color: #8c8380;
+}
+
+.table-title{
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    font-size: 10pt;
+    color: #0c0c2f;
+}
+.table-text{
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    font-size: 10pt;
+    color: #0c0c2f;
+}
+.table-content{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 6.57pt;
+    color: #9e9e9e;
+}
+.table-content td{
+    position: relative;
+    padding: 9px 20px;
+}
+.table-content tr td:nth-child(2n):after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 23%;
+    height: 66%;
+    background-color: #dedad8;
+    width: 2px;
+
+}
+.bad-col-lg-4{
+    position: relative;
+    margin-right: -15px;
+    padding: 0 0 0 30px;
+}

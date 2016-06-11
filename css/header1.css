@@ -1,0 +1,120 @@
+.burger{
+    position: fixed;
+    top: 55px;
+    left: 0;
+    width: 27px;
+    height: 27px;
+    background-color: #665957;
+    z-index:99999;
+    text-align: center;
+    padding-top: 3px;
+}
+.burger i a{
+    color: #fff;
+}
+.intro {
+    z-index: 10;
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.intro .intro-body .intro-text {
+    color: #a79b93;
+    text-transform: uppercase;
+    font-size: 18pt;
+}
+
+@media(min-width:768px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 20.68pt;
+    }
+}
+
+.btn-circle {
+    width: 52px;
+    height: 52px;
+    margin-top: 15px;
+    /*padding: 7px 16px;*/
+    text-align: center;
+    border-radius: 100%;
+    background-color: #292b41;
+    font-size: 40px;
+    color: #dedad3;
+}
+
+.btn-circle i.animated {
+    color: #fff;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    position: relative;
+    top: -8px;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
