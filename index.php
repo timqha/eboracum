@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php get_header("custom1"); ?>
 
-<section  id="about" class="video-section">
+<section id="about" class="video-section">
     <div class="container">
         <div class="col-lg-12">
 
@@ -367,6 +367,9 @@
         </div>
     </div>
 </section>
+
+
+
 
 
 <?php //get_footer(); ?>

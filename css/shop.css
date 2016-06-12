@@ -1,3 +1,31 @@
+.basket {
+    position: fixed;
+    top: 83px;
+    left: 0;
+    width: 27px;
+    height: 27px;
+    background-color: #c5c1bf;
+    z-index: 99999;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.basket img {
+    width: 62%;
+}
+
+.basket div {
+    position: relative;
+    top: -24px;
+    left: 4px;
+    text-align: center;
+}
+
+.basket div a {
+    font-size: 10pt;
+    color: #a79b93;
+}
+
 .shop-1-bgc {
     background-color: #f3f2f2;
 }
@@ -28,7 +56,7 @@
     border-radius: 5px;
     white-space: nowrap;
     min-width: 100px;
-    min-height: 25px;
+    min-height: 32px;
     padding-top: 2px;
 }
 
@@ -36,10 +64,122 @@
     background-color: #f3f2f2;
 }
 
-.ticket-section .navbar-tabs-custom{
+.ticket-section .navbar-tabs-custom {
     padding: 10px 0;
 }
 
-.ticket-section .tb-events-scroll{
+.ticket-section .tb-events-scroll {
     height: 367px;
 }
+
+/* modal */
+.modal-content {
+    position: relative;
+    background-color: #f4f2f2;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    /*border: 1px solid rgba(0,0,0,.2);*/
+    border-radius: 0px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+.modal-body {
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1000px) {
+    .my-modal-dialog-size {
+        width: 65%;
+    }
+
+    .modal-body {
+        padding: 40px 25px 20px;
+    }
+}
+
+.modal-title {
+    text-transform: uppercase;
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-size: 2.45em;
+    line-height: 50px;
+    color: #0c0c2f;
+}
+
+button.close.my-modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #C0BAE3;
+    width: 20px;
+    height: 20px;
+    color: #edebe8;
+}
+
+.modal-backdrop {
+    background-color: #151619;
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=75);
+    opacity: .75;
+}
+
+.description {
+    text-transform: none;
+    font-family: "Crimson Text", serif;
+    color: #706a65;
+    font-size: 1em;
+    padding-top: 20px;
+}
+
+.modal-date {
+    font-family:"Crimson Text", serif;
+    font-size:1em;
+    padding: 22px 0;
+}
+
+.modal-place{
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-size:10.75pt;
+    padding-bottom: 52px;
+}
+
+.modal-place:after{
+    content: '';
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    height: 1px;
+    width: 80%;
+    background-color: #d0cac6;
+}
+.ticket input.number-ticket-modal {
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 1em;
+    min-width: 25px;
+    height: 25px;
+}
+
+.ticket span {
+    font-family:"Crimson Text",serif;
+    font-size:12pt;
+    color: #8c8380;
+}
+.ticket{
+    padding-bottom: 10px;
+}
+
+.modal-body .button-my-blue{
+    margin-top: 10px;
+    width: 133px;
+}
+
+/* modal */
