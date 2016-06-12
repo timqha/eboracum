@@ -227,7 +227,7 @@ table.table-events {
 .table-events tr td{
     position: relative;
 }
-.table-events tr td:nth-child(3):after {
+.table-events tr td:nth-child(3):before {
     content: '';
     position: absolute;
     left: 0;

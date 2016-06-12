@@ -138,19 +138,19 @@ button.close.my-modal-close {
 }
 
 .modal-date {
-    font-family:"Crimson Text", serif;
-    font-size:1em;
+    font-family: "Crimson Text", serif;
+    font-size: 1em;
     padding: 22px 0;
 }
 
-.modal-place{
+.modal-place {
     position: relative;
     font-family: "Open Sans", sans-serif;
-    font-size:10.75pt;
+    font-size: 10.75pt;
     padding-bottom: 52px;
 }
 
-.modal-place:after{
+.modal-place:after {
     content: '';
     position: absolute;
     bottom: 25px;
@@ -159,6 +159,7 @@ button.close.my-modal-close {
     width: 80%;
     background-color: #d0cac6;
 }
+
 .ticket input.number-ticket-modal {
     width: 100%;
     border: none;
@@ -169,17 +170,99 @@ button.close.my-modal-close {
 }
 
 .ticket span {
-    font-family:"Crimson Text",serif;
-    font-size:12pt;
+    font-family: "Crimson Text", serif;
+    font-size: 12pt;
     color: #8c8380;
 }
-.ticket{
+
+.ticket {
     padding-bottom: 10px;
 }
 
-.modal-body .button-my-blue{
+.modal-body .button-my-blue {
     margin-top: 10px;
     width: 133px;
 }
 
 /* modal */
+
+.table-events .check-close {
+    border: none;
+    display: inline-block;
+    text-align: center;
+    background: #c5c1bf;
+    width: 29px;
+    height: 29px;
+    color: #fff;
+    padding: 5px;
+}
+
+.table-events select {
+    width: 100%;
+    height: 29px;
+    background: transparent;
+    font-family: "Crimson Text", serif;
+    font-size: 1em;
+    border: 1px solid #d9d9dd;
+}
+
+.table-events td {
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-size: 10.75pt;
+    color: #9e9e9e;
+}
+
+.table-events td.gg {
+    font-size: 15.92pt;
+}
+
+.table-events tr td.times {
+    padding: 0;
+    padding-left: 38px;
+}
+
+.CHECKOUT-section .tac .big-number {
+    font-size: 30pt;
+}
+
+.CHECKOUT-section .month {
+    font-size: 13pt;
+}
+
+.CHECKOUT-section .table-title {
+    font-size: 19pt;
+}
+
+.CHECKOUT-section .table-events .text-even {
+    font-size: 13pt;
+    text-transform: uppercase;
+}
+.CHECKOUT-section table.table-events {
+    position: relative;
+    border-collapse: separate;
+    border-spacing: 0 22px;
+}
+
+.CHECKOUT-section tr td{
+    position: relative;
+    /*border-bottom: 3px dotted #c7c0bb;*/
+}
+
+.CHECKOUT-section tr td:after, .CHECKOUT-section tr th:before{
+    position: absolute;
+    content: '';
+    width: 333%;
+    border-bottom: 3px dashed #c7c0bb;
+    left: -117%;
+    bottom: -15px;
+    transform: scale(0.3, 1);
+}
+.CHECKOUT-section .table-events tr td.line:nth-child(3):before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12%;
+    height: 78%;
+    border-left: 3px dotted #c7c0bb;
+}
