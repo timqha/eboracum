@@ -107,7 +107,7 @@
                             </div>
                             <div class="month">january</div>
                         </td>
-                        <td>
+                        <td class="line">
                             <div class="table-title">
                                 music for good friday
                             </div>
@@ -124,7 +124,7 @@
                             </div>
                             <div class="month">march</div>
                         </td>
-                        <td>
+                        <td class="line">
                             <div class="table-title">
                                 concert
                             </div>
@@ -141,7 +141,7 @@
                             </div>
                             <div class="month">april</div>
                         </td>
-                        <td>
+                        <td class="line">
                             <div class="table-title">
                                 if music be the food of love
                             </div>
@@ -276,7 +276,7 @@
                                 </div>
                                 <div class="month">january</div>
                             </td>
-                            <td>
+                            <td class="line">
                                 <div class="table-title">
                                     music for good friday
                                 </div>
@@ -308,7 +308,7 @@
                                 </div>
                                 <div class="month">march</div>
                             </td>
-                            <td>
+                            <td class="line">
                                 <div class="table-title">
                                     concert
                                 </div>
@@ -340,7 +340,7 @@
                                 </div>
                                 <div class="month">april</div>
                             </td>
-                            <td>
+                            <td class="line">
                                 <div class="table-title">
                                     if music be the food of love
                                 </div>

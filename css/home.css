@@ -73,14 +73,14 @@ figcaption {
     padding: 9px 20px;
 }
 
-.table-content tr td:nth-child(2n):after {
+.table-content tr td.line:after {
     content: '';
     position: absolute;
     left: 0;
-    top: 23%;
-    height: 66%;
-    background-color: #dedad8;
-    width: 2px;
+    top: -50%;
+    height: 200%;
+    border-left: 3px dashed #c7c0bb;
+    transform: scale(0.8, 0.3);
 
 }
 
@@ -227,14 +227,22 @@ table.table-events {
 .table-events tr td{
     position: relative;
 }
-.table-events tr td:nth-child(3):before {
+
+.table-events tr td.line:before {
     content: '';
     position: absolute;
     left: 0;
-    top: 12%;
-    height: 78%;
-    background-color: #dedad8;
-    width: 2px;
+    top: -50%;
+    height: 200%;
+    border-left: 3px dashed #c7c0bb;
+    transform: scale(0.8, 0.3);
+    /* content: ''; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 12%; */
+    /* height: 78%; */
+    /* background-color: #dedad8; */
+    /* width: 2px; */
 }
 
 /*events*/
