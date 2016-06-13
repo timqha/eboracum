@@ -15,33 +15,13 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#home">home</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#about">about</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#events">events</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#news">news</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">contact</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#twitter"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#facebook"><i class="fa fa-facebook"></i></a>
-                </li>
-            </ul>
+             <?php 
+            wp_nav_menu( array(
+'menu' => 'main_nav',
+'menu_class'      => 'nav navbar-nav', 
+                'container'=> '',
+) );
+            ?>
         </div>
         <!-- /.navbar-collapse -->
     </div>

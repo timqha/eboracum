@@ -33,7 +33,7 @@
                             if ( comments_open() || get_comments_number() ) :
                             {
 
-                                
+                               
                                 echo('<div class="badge-post">');
                                 echo (get_comments_number());
                                 echo(' </div>');
@@ -44,8 +44,7 @@
                         <div class="col-md-8">
 
                             <div class="post-content">
-                           <img src="<?php echo first_post_image() ?>" 
-                                <?php the_excerpt(); ?>
+                                <?php the_content() ?>
                             </div>
                         </div>
                     </div>
