@@ -35,8 +35,14 @@
     }
 }
 
-.burger a {
+.burger div {
     color: #fff !important;
+    cursor: pointer;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: rgb(65, 68, 96);
 }
 
 .intro {

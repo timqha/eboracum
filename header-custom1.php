@@ -1,6 +1,68 @@
-<div class="burger">
-    <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+<style>
+    .pushy-submenu > a::after {
+        background: url("<?php echo bloginfo('template_url'); ?>/img/arrow.svg") no-repeat;
+    }
+</style>
+
+<!-- Pushy Menu -->
+<nav class="pushy pushy-left">
+    <ul class="nav">
+        <!-- Submenu -->
+        <li class="pushy-submenu">
+            <a>ABOUT</a>
+            <ul>
+                <li class="pushy-link"><a href="#">VIDEOS</a></li>
+                <li class="pushy-link"><a href="#">RECORDINGS</a></li>
+                <li class="pushy-link"><a href="#">EDUCATION</a></li>
+            </ul>
+        </li>
+        <li class="pushy-submenu">
+            <a>EVENTS</a>
+            <ul>
+                <li class="pushy-link"><a href="#">UPCOMING</a></li>
+                <li class="pushy-link"><a href="#">PAST</a></li>
+                <li class="pushy-link"><a href="#">GALLERY</a></li>
+            </ul>
+        </li>
+        <li class="pushy-submenu">
+            <a>NEWS</a>
+            <ul>
+                <li class="pushy-link"><a href="#">BLOG</a></li>
+                <li class="pushy-link"><a href="#">REVIEWS</a></li>
+                <li class="pushy-link"><a href="#">THOMAS TUDWAY
+                        PROJECT</a></li>
+            </ul>
+        </li>
+        <li class="pushy-submenu">
+            <a>SHOP</a>
+            <ul>
+                <li class="pushy-link"><a href="#">SHOP</a></li>
+                <li class="pushy-link"><a href="#">SUPPORT US</a></li>
+                <li class="pushy-link"><a href="#">BUY TICKETS</a></li>
+            </ul>
+        </li>
+        <li class="pushy-submenu">
+            <a>CONTACT</a>
+            <ul>
+                <li class="pushy-link"><a href="#">CONTACT</a></li>
+                <li class="pushy-link"><a href="#">JOIN NEWSLETTER</a></li>
+            </ul>
+        </li>
+<!--        <li class="pushy-link"><a href="#">Item 1</a></li>-->
+
+    </ul>
+</nav>
+
+<!-- Site Overlay -->
+<div class="site-overlay"></div>
+
+<!-- Your Content -->
+<div id="container"  class="burger">
+    <!-- Menu Button -->
+<!--    <div class="menu-btn">&#9776; Menu</div>-->
+    <div class="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></div>
 </div>
+
 <!-- Navigation -->
 <nav class="navbar navbar-custom navbar-custom-full navbar-fixed-top" role="navigation">
     <div class="container-fluid">

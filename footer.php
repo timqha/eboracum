@@ -54,5 +54,7 @@
         <i class="fa fa-angle-up"></i>
     </a>
 </section>
+
+<script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/pushy.min.js"></script>
 </body>
 </html>
