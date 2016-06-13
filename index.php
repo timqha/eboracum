@@ -185,7 +185,7 @@
             <div class="row">
                 <div class="center-title">
                     <div class="col-xs-12">
-                        <img class="logo-head-2" src="<?php echo bloginfo('template_url'); ?>/img/stylich.png""
+                        <img class="logo-head-2" src="<?php echo bloginfo('template_url'); ?>/img/stylich.png"
                         alt="Stylish Choral singing">
                     </div>
                     <div class="col-xs-12">
