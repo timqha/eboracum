@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 tb-events-scroll-checkout">
                         <table class="table-events">
                             <tr>
                                 <td colspan="3" class="gg">shopping basket</td>
@@ -131,27 +131,27 @@
                                 </td>
                             </tr>
                         </table>
-                        <div class="row padding-total">
-                            <div class="col-xs-12">
-                                <div class="pull-right">
-                                    <span class="total">total:</span><span class="total-number">
+
+                    </div>
+                </div>
+                <div class="row padding-total">
+                    <div class="col-xs-12">
+                        <div class="pull-right">
+                            <span class="total">total:</span><span class="total-number">
                                         £43.95
                                     </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="pull-right">
-                                    <button class="my-button">
-                                        checkout
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="pull-right">
+                            <button class="my-button">
+                                checkout
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

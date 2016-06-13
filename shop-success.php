@@ -1,4 +1,3 @@
-
 <!-- SHOP -->
 <div class="basket">
     <img src="<?php echo bloginfo('template_url'); ?>/img/basket.png" alt="bucket">
@@ -30,8 +29,8 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12">
-                        <table class="table-events">
+                    <div class="col-lg-12 tb-events-scroll-success">
+                        <table class="table-events ">
                             <tr>
                                 <td></td>
                                 <td></td>
@@ -128,14 +127,14 @@
                                 </td>
                             </tr>
                         </table>
-                        <div class="row padding-total-success">
-                            <div class="col-xs-12">
-                                <div class="pull-right">
-                                    <span class="total">total:</span><span class="total-number">
+                    </div>
+                </div>
+                <div class="row padding-total-success">
+                    <div class="col-xs-12">
+                        <div class="pull-right">
+                            <span class="total">total:</span><span class="total-number">
                                         £43.95
                                     </span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

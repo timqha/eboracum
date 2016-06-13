@@ -332,3 +332,12 @@ button.close.my-modal-close {
 .text-summary b{
     color: #292b41;
 }
+
+.tb-events-scroll-success{
+    overflow-y: scroll;
+    height: 435px;
+}
+.tb-events-scroll-checkout {
+    overflow-y: scroll;
+    height: 465px;
+}
