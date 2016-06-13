@@ -1,4 +1,8 @@
-<section class="container content-text">
+<?php
+get_header();
+get_header("custom2");
+?>
+   <section class="container content-text">
     <div class="col-lg-12">
 
         <div class="row">
@@ -115,5 +119,43 @@
                 </div>
             </div>
         </div>
+         <?php if( have_posts() ){ while( have_posts() ){ the_post(); ?>
+          <div class="row">
+                <div class="col-lg-12 post-blog">
+                    <div class="col-md-4">
+                        <div class="title-post font-roman">
+                            <a href="<?php the_permalink(); ?>">
+								<?php the_title(); ?>
+							</a>
+                        </div>
+                        
+                            <div class="date-post">
+                                <?php the_date(); ?>
+                            </div>
+
+                            <?
+                            if ( comments_open() || get_comments_number() ) :
+                            {
+
+                                comments_template();
+                                echo('<div class="badge-post">');
+                                echo (get_comments_number());
+                                echo(' </div>');
+                            }
+                            endif;?>
+
+                        </div>
+                        <div class="col-md-8">
+
+                            <div class="post-content">
+                                <?php the_content() ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <?php } }/* конец while */ ?>
     </div>
 </section>
+<?
+get_footer();?>

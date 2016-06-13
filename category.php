@@ -1,5 +1,5 @@
 <?php get_header()?>
-<?php get_header("custom1"); ?>
+<?php get_header("custom2"); ?>
    <section class="container content-text">
     <div class="col-lg-12">
         <!--        <div class="row">-->
