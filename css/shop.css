@@ -222,6 +222,10 @@ button.close.my-modal-close {
     padding-left: 38px;
 }
 
+.CHECKOUT-section {
+    padding: 4% 0 6%;
+}
+
 .CHECKOUT-section .tac .big-number {
     font-size: 30pt;
 }
@@ -238,18 +242,19 @@ button.close.my-modal-close {
     font-size: 13pt;
     text-transform: uppercase;
 }
+
 .CHECKOUT-section table.table-events {
     position: relative;
     border-collapse: separate;
     border-spacing: 0 22px;
 }
 
-.CHECKOUT-section tr td{
+.CHECKOUT-section tr td {
     position: relative;
     /*border-bottom: 3px dotted #c7c0bb;*/
 }
 
-.CHECKOUT-section tr td:after, .CHECKOUT-section tr th:before{
+.CHECKOUT-section tr td:after, .CHECKOUT-section tr th:before {
     position: absolute;
     content: '';
     width: 333%;
@@ -257,4 +262,73 @@ button.close.my-modal-close {
     left: -117%;
     bottom: -15px;
     transform: scale(0.3, 0.8);
+}
+
+.CHECKOUT-section select:active,
+.CHECKOUT-section select:focus {
+    outline: 0;
+}
+
+.my-button {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.794635em;
+    background-color: #303056;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    min-width: 100px;
+    min-height: 32px;
+    padding-top: 2px;
+}
+
+.total {
+    font-family: 'Open Sans', sans-serif;
+    color: #9e9e9e;
+    text-transform: uppercase;
+    font-size: 15.03pt;
+}
+
+.total-number {
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+    font-size: 18.92pt;
+    color: #292b41;
+}
+
+.padding-total {
+    padding: 34px 0 41px;
+}
+
+.padding-total-success {
+    padding-top: 34px;
+}
+
+.summary-number {
+    width: 100%;
+    height: 29px;
+    background: transparent;
+    font-family: "Crimson Text", serif;
+    font-size: 1em;
+    border: 1px solid #d9d9dd;
+    padding: 3px;
+}
+
+.title-summary{
+    font-family:"Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 15.95pt;
+    color: #9e9e9e;
+    padding: 28px 0 15px;
+}
+
+.text-summary{
+    font-family: "Crimson Text", serif;
+    color: #706a65;
+    font-size: 14pt;
+}
+.text-summary b{
+    color: #292b41;
 }
