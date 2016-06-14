@@ -44,7 +44,7 @@
                         <div class="col-md-8">
 
                             <div class="post-content">
-                           <img src="<?php echo first_post_image() ?>" 
+                           <?php echo first_post_image() ?> 
                                 <?php the_excerpt(); ?>
                             </div>
                         </div>
@@ -61,7 +61,6 @@
         <div class="col-lg-3">
            
             <div class="col-lg-12">
-                <input class="post-search" type="search" placeholder="* SEARCH">
                 <?php get_sidebar();?>
 
             </div>

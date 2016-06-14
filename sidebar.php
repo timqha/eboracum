@@ -1,3 +1,4 @@
+<?php get_search_form()?>
 <div class="aside">
     <div class="aside-title">
         Categories

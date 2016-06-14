@@ -8,10 +8,10 @@ function first_post_image() {
   $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
   $first_img = $matches [1] [0];
   if(empty($first_img)){
-   $first_img = "/wp-content/themes/ebiracum/img/noimages.jpg";
+   $first_img = "/wp-content/themes/ebracum/img/noimages.jpg";
 // укажите путь к изображению, которое будет выводится по умолчанию. 
   }
-  return $first_img;
+ else return '<img src="'.$first_img.'">';
 }
 
 register_nav_menus(array( 'top' => 'top menu', 
