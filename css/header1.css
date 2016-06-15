@@ -40,7 +40,7 @@
     cursor: pointer;
 }
 
-.nav>li>a:focus, .nav>li>a:hover {
+.pushy .nav>li>a:focus, .pushy .nav>li>a:hover {
     text-decoration: none;
     background-color: rgb(65, 68, 96);
 }
