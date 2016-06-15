@@ -8,7 +8,7 @@
                 <i class="fa fa-bars"></i>
             </button>
 
-                    <a class="navbar-brand" href="#page-top">
+                    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/#page-top' ) ); ?>">
                         <img src="<?php echo bloginfo('template_url'); ?>/img/logo.png" alt="eduction-1">
                     </a>
         </div>
