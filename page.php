@@ -4,7 +4,7 @@ get_header("custom2");
 ?>
    <section class="container content-text single">
     <div class="col-lg-12">
-
+ <?php if( have_posts() ){ while( have_posts() ){ the_post(); ?>
         <div class="row">
             <div class="col-md-4">
                 <ul class="nav navbar-tabs-custom">
@@ -18,31 +18,12 @@ get_header("custom2");
                             <div class="barocks-img"><img
                                     src="<?php echo bloginfo('template_url'); ?>/img/atr-symbol.png"
                                     alt="art"></div>
-                            <div class="barocks-title">THOMAS TUDWAY
-                                PROJECT
+                            <div class="barocks-title"><?php the_title(); ?>
                             </div>
                         </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit dui dolor, eget
-                            fermentum ante
-                            ultricies ac. Quisque imperdiet eros quis ex tempor, eget rutrum lorem mattis. Proin
-                            sollicitudin
-                            suscipit vulputate. Nam faucibus porttitor tempus. Praesent rutrum vehicula enim eget
-                            facilisis.
-                            Curabitur tempor metus ut dui tempus, non elementum nunc finibus. Sed vitae hendrerit magna.
-                        </p>
-
-                        <p>Fusce finibus vel dolor eget sollicitudin. In rutrum egestas tortor sit amet gravida.
-                            Pellentesque
-                            volutpat urna at pellentesque sagittis. Praesent vel tortor eget metus luctus dignissim.
-                            Donec
-                            tincidunt mauris quis viverra porta. Cras sed condimentum neque, vel euismod ligula.
-                            Vestibulum ante
-                            ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eleifend, odio
-                            id
-                            blandit vestibulum, odio lectus viverra enim, id dignissim enim libero ac velit. Sed et
-                            elementum
-                            diam.</p>
+                       <?php 
+                               htm_image_content_filter(the_content());
+                                ?>
                     </div>
                     <div id="about" class="tab-pane fade">
                         <div class="barocks">
@@ -108,55 +89,25 @@ get_header("custom2");
             </div>
             <div class="col-md-offset-1 col-md-7 gallery">
                 <div class="row">
-                    <div class="col-md-6"><img src="<?php echo bloginfo('template_url'); ?>/img/THOMAS-TUDWAY-1.jpg"
-                                               alt="eduction-1"></div>
-                    <div class="col-md-6"><img src="<?php echo bloginfo('template_url'); ?>/img/THOMAS-TUDWAY-2.jpg"
-                                               alt="eduction-2"></div>
-                    <div class="col-md-6"><img src="<?php echo bloginfo('template_url'); ?>/img/THOMAS-TUDWAY-3.jpg"
-                                               alt="eduction-3"></div>
-                    <div class="col-md-6"><img src="<?php echo bloginfo('template_url'); ?>/img/THOMAS-TUDWAY-4.jpg"
-                                               alt="eduction-4"></div>
+                      <?php
+	$args = array(
+		'order'          => 'ASC',
+		'orderby'        => 'menu_order',
+		'post_type'      => 'attachment',
+		'post_parent'    => $post->ID,
+		'post_mime_type' => 'image',
+		'post_status'    => null,
+	);
+	$attachments = get_posts($args);
+	if ($attachments) {
+		foreach ($attachments as $attachment) {
+			echo wp_get_attachment_link($attachment->ID, array(500,251), false, false);
+		}
+	}
+?>
                 </div>
             </div>
         </div>
-         <?php if( have_posts() ){ while( have_posts() ){ the_post(); ?>
-          <div class="row">
-                <div class="col-lg-12 post-blog">
-                 
-                   <div class="post-content">
-                                <div class="title-post font-roman">
-                            <a href="<?php the_permalink(); ?>">
-								<?php the_title(); ?>
-							</a>
-                        </div>
-                                <?php the_content() ?>
-                            </div>
-                    <div class="col-md-4">
-                        
-                        
-                            <div class="date-post">
-                                <?php the_date(); ?>
-                            </div>
-
-                            <?
-                            if ( comments_open() || get_comments_number() ) :
-                            {
-
-                                comments_template();
-                                echo('<div class="badge-post">');
-                                echo (get_comments_number());
-                                echo(' </div>');
-                            }
-                            endif;?>
-
-                        </div>
-                        <div class="col-md-8">
-
-                            
-                        </div>
-                    </div>
-                </div>
-
             <?php } }/* конец while */ ?>
     </div>
 </section>

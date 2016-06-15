@@ -13,9 +13,9 @@
 }
 
 .content-text .gallery img {
-    width: 100%;
-    padding-bottom: 15px;
-    max-height: 231px;
+    width: 45%;
+    max-height: 251px;
+    margin: 7px;
 }
 
 .gallery .col-md-6 {

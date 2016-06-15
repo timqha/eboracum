@@ -55,4 +55,13 @@ function add_sheensay_quicktags() {
     </script>
     <?php endif;
 }
+
+/*Single tesxt output
+*/
+add_filter('the_content','htm_image_content_filter',11);
+
+function htm_image_content_filter($content){
+	$content = preg_replace("/<img[^>]+\>/i", "", $content);
+return $content;
+}
 ?>
