@@ -98,6 +98,11 @@
             <div class="row">
                 <div class="col-md-4">
                     this dynamically displays twitter feed
+                    <figure class="op-social">
+                        <iframe>
+<!--                            twitter embed code here -->
+                        </iframe>
+                        <figure>
                 </div>
                 <div class="col-md-4">
                     <figure>
@@ -170,7 +175,7 @@
 
     </section>
 
-    <!-- veideos recording -->
+    <!-- videos recording -->
     <section class=" content-text videos-recordings">
         <div class="container">
             <div class="row">
@@ -185,13 +190,24 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 padding-col-lg-6">
                             <div class="barocks barocks-light">
                                 <div class="barocks-img"><img
                                         src="<?php echo bloginfo('template_url'); ?>/img/atr-symbol.png"
                                         alt="art"></div>
                                 <div class="barocks-title">recordings
                                 </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/13874707&amp;color=202235&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></div>
+                                <div class="col-lg-12">
+                                    <div class="vr-title">OTHER RECORDINGS</div>
+                                    <div class="vr-text">
+                                        Eboracum Baroque are a group of young professional singers and instrumentalists at the start classical music careers. The group was formed in 2012 by Chris Parsons at the University of York and has performed all across the UK in prestigious venues including St John's College Chapel, Cambridge and The Temple Church, London.
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -207,7 +223,7 @@
                 <div class="row">
                     <div class="center-title">
                         <div class="col-xs-12">
-                            <img class="logo-head-2" src="<?php echo bloginfo('template_url'); ?>/img/stylich.png""
+                            <img class="logo-head-2" src="<?php echo bloginfo('template_url'); ?>/img/stylich.png"
                             alt="Stylish Choral singing">
                         </div>
                         <div class="col-xs-12">

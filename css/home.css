@@ -455,6 +455,32 @@ table.table-events {
 /* slider */
 
 /* videos-recordings */
+
+.padding-col-lg-6{
+    padding-left: 50px;
+}
+
+.vr-title, .vr-title-b{
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-size: 10.5pt;
+    padding-top: 39px;
+    padding-bottom: 12px;
+}
+
+.vr-title{
+    color: #ffffff;
+}
+
+.vr-text, .vr-text-b {
+    font-family: "Crimson Text", serif;
+    font-size: 11.29pt;
+}
+
+.vr-text {
+    color: #7a746f;
+}
+
 .videos-recordings {
     background-image: -webkit-linear-gradient(left,
     #f3f2f2 0%,
