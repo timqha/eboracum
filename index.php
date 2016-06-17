@@ -97,12 +97,14 @@
         <div class="col-lg-12">
             <div class="row">
                 <div class="col-md-4">
-                    this dynamically displays twitter feed
-                    <figure class="op-social">
-                        <iframe>
-<!--                            twitter embed code here -->
-                        </iframe>
-                        <figure>
+
+                    <div id="example1"></div>
+
+
+<!--<a class="twitter-timeline"  data-chrome="noheader nofooter noborders noscrollbar transparent" data-width="100%" data-height="236" data-dnt="true"-->
+<!--               data-link-color="#fff" data-tweet-limit="1" href="https://twitter.com/Eboracumbaroque">Tweets-->
+<!--        by Eboracumbaroque</a>-->
+
                 </div>
                 <div class="col-md-4">
                     <figure>
@@ -200,11 +202,18 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-lg-12"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/13874707&amp;color=202235&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></div>
+                                <div class="col-lg-12">
+                                    <iframe width="100%" height="450" scrolling="no" frameborder="no"
+                                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/13874707&amp;color=202235&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                                </div>
                                 <div class="col-lg-12">
                                     <div class="vr-title">OTHER RECORDINGS</div>
                                     <div class="vr-text">
-                                        Eboracum Baroque are a group of young professional singers and instrumentalists at the start classical music careers. The group was formed in 2012 by Chris Parsons at the University of York and has performed all across the UK in prestigious venues including St John's College Chapel, Cambridge and The Temple Church, London.
+                                        Eboracum Baroque are a group of young professional singers and instrumentalists
+                                        at the start classical music careers. The group was formed in 2012 by Chris
+                                        Parsons at the University of York and has performed all across the UK in
+                                        prestigious venues including St John's College Chapel, Cambridge and The Temple
+                                        Church, London.
                                     </div>
                                 </div>
 
@@ -224,7 +233,7 @@
                     <div class="center-title">
                         <div class="col-xs-12">
                             <img class="logo-head-2" src="<?php echo bloginfo('template_url'); ?>/img/stylich.png"
-                            alt="Stylish Choral singing">
+                                 alt="Stylish Choral singing">
                         </div>
                         <div class="col-xs-12">
                             <div class="sect-the-guard">the guardian</div>
@@ -690,7 +699,7 @@
                                     <div class="btn-padding-contact-us">
                                         <button class="input-form-submit">join mailing list</button>
                                     </div>
-<!--  buttons twitter facebook -->
+                                    <!--  buttons twitter facebook -->
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <a href="twitter.com/eboracumbaroque" class="btn-contact-me"><i

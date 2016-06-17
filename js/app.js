@@ -21,4 +21,4 @@ $(document).ready(collapseNavbar);
     });
 
 
-})(jQuery)
+})(jQuery);
