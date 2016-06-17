@@ -1,4 +1,9 @@
 <?php
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
 //Вывод первой картинки с поста
 function first_post_image() {
   global $post, $posts;
@@ -99,4 +104,18 @@ function my_multi_col_v2($content){
 	// remove any left over empty <p> tags
 	$content = str_replace('<p></p>', '', $content);
 }
+
+
+function register_my_widgets(){
+	    register_sidebar(array(
+        'name' => __('Twitter widget'),
+        'id' => 'postin-widget-area',
+        'description' => __('Widget in a posts'),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h3><a href="#">',
+        'after_title' => '</a></h3>',
+    ));
+}
+add_action( 'widgets_init', 'register_my_widgets' );
 ?>
