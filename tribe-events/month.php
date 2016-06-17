@@ -19,6 +19,6 @@ do_action( 'tribe_events_before_template' );
 tribe_get_template_part( 'modules/bar' );
 
 // Main Events Content
-tribe_get_template_part( 'month/content' );
+tribe_get_template_part( 'month/content' ); 
 
 do_action( 'tribe_events_after_template' );
