@@ -7,7 +7,6 @@ get_header("custom2");
         <div class="col-lg-12">
             <?php if( have_posts() ){ while( have_posts() ){ the_post(); ?>
                  <?php
-                                                 
            $content = get_the_content('',FALSE,''); // arguments remove 'more' text
 $content = my_multi_col_v2($content);
 /*

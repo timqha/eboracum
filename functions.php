@@ -83,8 +83,9 @@ function my_multi_col_v2($content){
 			}
 			// check to see if there is an appending </p>, if there is, remove
 			$columns[$i] = preg_replace('/^\s?<\/p>/', '', $columns[$i]);
-			// now add the div wrapper
+			
             $test[$i] = $columns[$i];
+           
 		}
 		
         return $test;

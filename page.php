@@ -18,11 +18,15 @@ get_header("custom2");
                             <div class="barocks-img"><img
                                     src="<?php echo bloginfo('template_url'); ?>/img/atr-symbol.png"
                                     alt="art"></div>
-                            <div class="barocks-title"><?php the_title(); ?>
+                            <div class="barocks-title">
+                            <a href="<?php the_permalink();?>">
+                                 <?php the_title(); ?>
+                            </a>
+                           
                             </div>
                         </div>
                        <?php 
-                               htm_image_content_filter(the_content());
+                               The_content();
                                 ?>
                     </div>
                     <div id="about" class="tab-pane fade">
