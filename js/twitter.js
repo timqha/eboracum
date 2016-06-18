@@ -13,9 +13,9 @@
 })(this, function () {
     function C(a) {
         if (null === r) {
-            // for (var f = a.length, b = 0, k = document.getElementById(D), g = "<div>"; b < f;)g += "<li>" + a[b] + "</li>", b++;
-            for (var f = a.length, b = 0, k = document.getElementById(D), g = "<div>"; b < f;)g += a[b], b++;
-            k.innerHTML = g + "</div>"
+            for (var f = a.length, b = 0, k = document.getElementById(D), g = "<div>"; b < f;)g += "<span>" + a[b] + "</span>", b++;
+            k.innerHTML = g + "</div>";
+
         } else r(a)
     }
 
@@ -39,7 +39,7 @@
         if (void 0 !== a && 0 <= a.innerHTML.indexOf("data-srcset"))return a = a.innerHTML.match(/data-srcset="([A-z0-9%_\.-]+)/i)[0], decodeURIComponent(a).split('"')[1]
     }
 
-    var D = "", f = 20, G = !0, v = [], x = !1, y = !0, w = !0, z = null, A = !0, B = !0, r = null, H = !0, I = !1, t = !0, J = !0, K = !1, m = null, L = {
+    D = "", f = 20, G = !0, v = [], x = !1, y = !0, w = !0, z = null, A = !0, B = !0, r = null, H = !0, I = !1, t = !0, J = !0, K = !1, m = null, L = {
         fetch: function (a) {
             void 0 ===
             a.maxTweets && (a.maxTweets = 20);
@@ -210,100 +210,11 @@ var config1 = {
     "id": '743883738547884032',
     "domId": 'example1',
     "maxTweets": 1,
-    "enableLinks": true,
-    "showPermalinks": false
-};
-twitterFetcher.fetch(config1);
-
-
-// ##### Simple example 2 #####
-// A simple example to get my latest 5 of my favourite tweets and write to a
-// HTML element with id "talk". Also automatically hyperlinks URLS and user
-// mentions and hashtags but does not display time of post. We also make the
-// request to Twitter specifiying we would like results where possible in
-// English language.
-var config2 = {
-    "id": '743883738547884032',
-    "domId": 'example2',
-    "maxTweets": 5,
-    "enableLinks": true,
-    "showUser": true,
-    "showTime": true,
-    "lang": 'en'
-};
-twitterFetcher.fetch(config2);
-
-
-// ##### Simple example 3 #####
-// A simple example to get latest 5 tweets for #API tag and shows any images
-// attached to tweets.
-var config3 = {
-    "id": '743883738547884032',
-    "domId": 'example3',
-    "maxTweets": 5,
-    "enableLinks": true,
-    "showImages": true
-};
-twitterFetcher.fetch(config3);
-
-
-// ##### Advanced example #####
-// An advance example to get latest 5 posts using hashtag #API and write to a
-// HTML element with id "tweets2" without showing user details and using a
-// custom format to display the date/time of the post, and does not show
-// retweets.
-var config4 = {
-    "id": '743883738547884032',
-    "domId": 'example4',
-    "maxTweets": 3,
-    "enableLinks": true,
     "showUser": false,
-    "showTime": true,
-    "dateFunction": dateFormatter,
+    "showTime": false,
+    "enableLinks": true,
+    "showInteraction": false,
+    "showPermalinks": false,
     "showRetweet": false
 };
-
-// For advanced example which allows you to customize how tweet time is
-// formatted you simply define a function which takes a JavaScript date as a
-// parameter and returns a string!
-// See http://www.w3schools.com/jsref/jsref_obj_date.asp for properties
-// of a Date object.
-function dateFormatter(date) {
-    return date.toTimeString();
-}
-
-twitterFetcher.fetch(config4);
-
-
-// ##### Advanced example 2 #####
-// Similar as previous, except this time we pass a custom function to render the
-// tweets ourself! Useful if you need to know exactly when data has returned or
-// if you need full control over the output.
-
-var config5 = {
-    "id": '743883738547884032',
-    "domId": '',
-    "maxTweets": 3,
-    "enableLinks": true,
-    "showUser": true,
-    "showTime": true,
-    "dateFunction": '',
-    "showRetweet": false,
-    "customCallback": handleTweets,
-    "showInteraction": false
-};
-
-function handleTweets(tweets) {
-    var x = tweets.length;
-    var n = 0;
-    var element = document.getElementById('example5');
-    var html = '<div width="100%">';
-    while (n < x) {
-        html += '<span>' + tweets[n] + '</span>';
-        n++;
-    }
-    html += '</div>';
-    element.innerHTML = html;
-}
-
-twitterFetcher.fetch(config5);
+twitterFetcher.fetch(config1);

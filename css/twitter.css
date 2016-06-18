@@ -5,3 +5,27 @@ p.tweet {
 #example1{
     background-color: #a79b93;
 }
+
+.barrocks-twitter {
+    background-color: #a79b93;
+    width: 100%;
+    color: #ffffff;
+    padding: 28px 16px 12px 23px;
+    font-family: "Crimson Text", serif;
+    font-size: 18pt;
+    font-style: italic;
+    height: 236px;
+    overflow-y: scroll;
+}
+
+.footer-twitter{
+    padding-top: 10px;
+}
+
+.footer-twitter i{
+    color: rgba(255,255,255, 0.3);
+}
+.barrocks-twitter p{
+    padding: 0;
+    margin: 0;
+}

@@ -25,7 +25,7 @@
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/app.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/twitter.js"></script>
     <?php wp_head();?>
-</head>
+
 <body>
 
 <span  id="page-top" ></span>
