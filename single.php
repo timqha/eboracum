@@ -7,24 +7,8 @@ get_header("custom2");
         <div class="col-lg-12">
             <?php if( have_posts() ){ while( have_posts() ){ the_post(); ?>
                  <?php
-           $content = get_the_content('',FALSE,''); // arguments remove 'more' text
-$content = my_multi_col_v2($content);
-/*
-	$args = array(
-		'order'          => 'ASC',
-		'orderby'        => 'menu_order',
-		'post_type'      => 'attachment',
-		'post_parent'    => $post->ID,
-		'post_mime_type' => 'image',
-		'post_status'    => null,
-	);
-	$attachments = get_posts($args);
-	if ($attachments) {
-		foreach ($attachments as $attachment) {
-			echo wp_get_attachment_link($attachment->ID, array(500,251), false, false);
-		}
-	}
-    */
+           $content = get_the_content(); // arguments remove 'more' text
+
 ?>
                 <div class="row">
                     <div class="col-md-4">
@@ -42,7 +26,11 @@ $content = my_multi_col_v2($content);
                                     </div>
                                     
                                 </div>
-                               <?php echo ($content[1]) ;?>
+                               <?
+
+echo strip_images($content);
+                                                            
+                                ?>
                             </div>
                             <div id="about" class="tab-pane fade">
                                 <div class="barocks">
@@ -68,7 +56,7 @@ $content = my_multi_col_v2($content);
                     </div>
                     <div class="col-md-offset-1 col-md-7 gallery">
                         <div class="row">
-                            <?php echo ($content[0]) ;?>
+                            <?php show_image_post();?>
                         </div>
                     </div>
                 </div>

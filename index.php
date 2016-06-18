@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 <?php get_header("custom1"); ?>
-
     <section id="about" class="video-section">
         <div class="container">
             <div class="col-lg-12">
@@ -687,7 +686,7 @@
                                 <div class="col-sm-6 input-form">
                                     <input class="imgw" type="text" placeholder="* your name">
                                     <input class="imgw" type="text" placeholder="* your e-mail">
-                                    <textarea name="message" cols="60" rows="10">* your message here</textarea>
+                                    <textarea name="message" cols="60" rows="10" placeholder="* your message here"></textarea>
                                     <button class="input-form-submit">submit</button>
                                 </div>
                                 <div class="col-sm-6">

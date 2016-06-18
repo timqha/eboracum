@@ -1,4 +1,10 @@
 <?php
+
+function my_function_admin_bar(){
+return false;
+}
+add_filter( 'show_admin_bar' , 'my_function_admin_bar');
+
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
     add_theme_support( 'woocommerce' );
@@ -61,16 +67,12 @@ function add_sheensay_quicktags() {
     <?php endif;
 }
 
-/*Single tesxt output
-
-
-add_filter('the_content','htm_image_content_filter',11);
-function htm_image_content_filter($content){
-    
-	$content = preg_replace("/<img[^>]+\>/i", "", $content);
-return $content;
+//Single Text outpu
+function strip_images($content){
+   return preg_replace('/<img[^>]+./','',$content);
 }
-*/
+
+
 function my_multi_col_v2($content){
 	// run through a couple of essential tasks to prepare the content
 	$content = apply_filters('the_content', $content);
@@ -118,4 +120,12 @@ function register_my_widgets(){
     ));
 }
 add_action( 'widgets_init', 'register_my_widgets' );
+
+
+function show_image_post(){
+	global $post;
+	preg_match_all("/<img[^>]+\>/i", $post->post_content, $img_mas);
+	foreach ($img_mas[0] as $img)
+	echo $img;
+}
 ?>
