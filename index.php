@@ -100,20 +100,18 @@
 
 
                     <div class="barrocks-twitter">
-<!--                        118 characters, as will operate at 240 characters? -->
-<!--                        <div id="example0">"Final prep for our trip to #york tomorrow for King Arthur with Horrible Histories author, Terry Deary @yorkearlymusic @VisitYork #returnhome"</div>-->
-                                            <div id="example1"></div>
+                        <!--                        118 characters, as will operate at 240 characters? -->
+                        <div id="example1"></div>
                         <div class="footer-twitter">
-                            - @Eboracumbaroque <a href="https://twitter.com/eboracumbaroque"><i class="pull-right fa fa-twitter"></i></a>
+                            - @Eboracumbaroque <a href="https://twitter.com/eboracumbaroque"><i
+                                    class="pull-right fa fa-twitter"></i></a>
                         </div>
                     </div>
 
 
-
-
-<!--<a class="twitter-timeline"  data-chrome="noheader nofooter noborders noscrollbar transparent" data-width="100%" data-height="236" data-dnt="true"-->
-<!--               data-link-color="#fff" data-tweet-limit="1" href="https://twitter.com/Eboracumbaroque">Tweets-->
-<!--        by Eboracumbaroque</a>-->
+                    <!--<a class="twitter-timeline"  data-chrome="noheader nofooter noborders noscrollbar transparent" data-width="100%" data-height="236" data-dnt="true"-->
+                    <!--               data-link-color="#fff" data-tweet-limit="1" href="https://twitter.com/Eboracumbaroque">Tweets-->
+                    <!--        by Eboracumbaroque</a>-->
 
                 </div>
                 <div class="col-md-4">
@@ -753,4 +751,6 @@
         </div>
 
     </section>
+
+    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/twitter.js"></script>
 <?php get_footer(); ?>

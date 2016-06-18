@@ -13,9 +13,9 @@
 })(this, function () {
     function C(a) {
         if (null === r) {
-            // for (var f = a.length, b = 0, k = document.getElementById(D), g = "<div>"; b < f;)g += "<li>" + a[b] + "</li>", b++;
-            for (var f = a.length, b = 0, k = document.getElementById(D), g = "<div>"; b < f;)g += a[b], b++;
-            k.innerHTML = g + "</div>"
+            for (var f = a.length, b = 0, k = document.getElementById(D), g = "<div>"; b < f;)g += "<span>" + a[b] + "</span>", b++;
+            k.innerHTML = g + "</div>";
+
         } else r(a)
     }
 
@@ -39,7 +39,7 @@
         if (void 0 !== a && 0 <= a.innerHTML.indexOf("data-srcset"))return a = a.innerHTML.match(/data-srcset="([A-z0-9%_\.-]+)/i)[0], decodeURIComponent(a).split('"')[1]
     }
 
-    var D = "", f = 20, G = !0, v = [], x = !1, y = !0, w = !0, z = null, A = !0, B = !0, r = null, H = !0, I = !1, t = !0, J = !0, K = !1, m = null, L = {
+    D = "", f = 20, G = !0, v = [], x = !1, y = !0, w = !0, z = null, A = !0, B = !0, r = null, H = !0, I = !1, t = !0, J = !0, K = !1, m = null, L = {
         fetch: function (a) {
             void 0 ===
             a.maxTweets && (a.maxTweets = 20);
@@ -214,6 +214,7 @@ var config1 = {
     "showTime": false,
     "enableLinks": true,
     "showInteraction": false,
-    "showPermalinks": false
+    "showPermalinks": false,
+    "showRetweet": false
 };
 twitterFetcher.fetch(config1);

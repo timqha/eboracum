@@ -23,7 +23,6 @@
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/jquery.min.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/bootstrap.min.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/app.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/twitter.js"></script>
 </head>
 <body>
 
