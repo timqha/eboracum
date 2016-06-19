@@ -197,7 +197,9 @@
                                         alt="art"></div>
                                 <div class="barocks-title">videos
                                 </div>
+                                
                             </div>
+                             <?php echo do_shortcode('[wonderplugin_slider id=1]'); ?>
                         </div>
                         <div class="col-sm-6 padding-col-lg-6">
                             <div class="barocks barocks-light">

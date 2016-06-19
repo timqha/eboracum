@@ -11,6 +11,7 @@ get_header("custom2");
 
 ?>
                 <div class="row">
+                   <?php echo do_shortcode("[tabs id='153']"); ?>
                     <div class="col-md-4">
                         <ul class="nav navbar-tabs-custom">
                             <li class="active"><a class="title" data-toggle="tab" href="#project">project</a></li>
@@ -39,7 +40,9 @@ echo strip_images($content);
                                     </div>
                                 </div>
                                 <p>
-                                    <?php echo ($content[2]) ;?>
+                                    <?php 
+                                    the_content();
+                                    ?>
                                 </p>
 
                            

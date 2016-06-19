@@ -318,3 +318,11 @@ a:focus {
 }
 
 /******   footer    ******/
+
+div.html5gallery-container-0
+div.html5gallery-box-0
+div.html5gallery-elem-0
+div.html5gallery-elem-img-0
+a{
+  visibility: hidden;
+}
