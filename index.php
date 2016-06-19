@@ -107,11 +107,6 @@
                         </div>
                     </div>
 
-
-                    <!--<a class="twitter-timeline"  data-chrome="noheader nofooter noborders noscrollbar transparent" data-width="100%" data-height="236" data-dnt="true"-->
-                    <!--               data-link-color="#fff" data-tweet-limit="1" href="https://twitter.com/Eboracumbaroque">Tweets-->
-                    <!--        by Eboracumbaroque</a>-->
-
                 </div>
                 <div class="col-md-4">
                     <figure>
@@ -543,57 +538,59 @@
                 </div>
                 <div class="col-sm-8">
                     <div class="row">
-                       <?php echo do_shortcode('[supsystic-gallery id=1]') ?>
-                       <?php echo do_shortcode('[supsystic-gallery id=2]') ?>
-                        <div class="col-md-3 col-sm-6 col-xs-3">
-                            <div class="row"><img src="<?php echo bloginfo('template_url'); ?>/img/content-1.jpg"
-                                                  alt="content" class="imgw imgh"></div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-3">
-                            <div class="row"><img src="<?php echo bloginfo('template_url'); ?>/img/content-2.jpg"
-                                                  alt="content" class="imgw imgh"></div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-3">
-                            <div class="row"><img src="<?php echo bloginfo('template_url'); ?>/img/content-3.jpg"
-                                                  alt="content" class="imgw imgh"></div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-3">
-                            <div class="row"><img src="<?php echo bloginfo('template_url'); ?>/img/content-4.jpg"
-                                                  alt="content" class="imgw imgh"></div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-3">
-                            <div class="row"><img src="<?php echo bloginfo('template_url'); ?>/img/content-5.jpg"
-                                                  alt="content" class="imgw imgh"></div>
-                        </div>
 
-                        <div class="col-md-3 col-sm-6 col-xs-3">
-                            <div class="row"><img src="<?php echo bloginfo('template_url'); ?>/img/content-6.jpg"
-                                                  alt="content" class="imgw imgh"></div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-3">
-                            <div class="row"><img src="<?php echo bloginfo('template_url'); ?>/img/content-7.jpg"
-                                                  alt="content" class="imgw imgh"></div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-3">
-                            <div class="row"><img src="<?php echo bloginfo('template_url'); ?>/img/content-8.jpg"
-                                                  alt="content" class="imgw imgh"></div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-3">
-                            <div class="row"><img src="<?php echo bloginfo('template_url'); ?>/img/content-9.jpg"
-                                                  alt="content" class="imgw imgh"></div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-3">
-                            <div class="row"><img src="<?php echo bloginfo('template_url'); ?>/img/content-10.jpg"
-                                                  alt="content" class="imgw imgh"></div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-3">
-                            <div class="row"><img src="<?php echo bloginfo('template_url'); ?>/img/content-11.jpg"
-                                                  alt="content" class="imgw imgh"></div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-3">
-                            <div class="row"><img src="<?php echo bloginfo('template_url'); ?>/img/content-12.jpg"
-                                                  alt="content" class="imgw imgh"></div>
-                        </div>
+
+                        
+                        <?php echo do_shortcode('[supsystic-gallery id=5]') ?>
+<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-1.jpg"-->
+<!--                                                  alt="content" class="imgw imgh"></div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-2.jpg"-->
+<!--                                                  alt="content" class="imgw imgh"></div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-3.jpg"-->
+<!--                                                  alt="content" class="imgw imgh"></div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-4.jpg"-->
+<!--                                                  alt="content" class="imgw imgh"></div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-5.jpg"-->
+<!--                                                  alt="content" class="imgw imgh"></div>-->
+<!--                        </div>-->
+<!---->
+<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-6.jpg"-->
+<!--                                                  alt="content" class="imgw imgh"></div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-7.jpg"-->
+<!--                                                  alt="content" class="imgw imgh"></div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-8.jpg"-->
+<!--                                                  alt="content" class="imgw imgh"></div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-9.jpg"-->
+<!--                                                  alt="content" class="imgw imgh"></div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-10.jpg"-->
+<!--                                                  alt="content" class="imgw imgh"></div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-11.jpg"-->
+<!--                                                  alt="content" class="imgw imgh"></div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-12.jpg"-->
+<!--                                                  alt="content" class="imgw imgh"></div>-->
+<!--                        </div>-->
                     </div>
 
                 </div>
