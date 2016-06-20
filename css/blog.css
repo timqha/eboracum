@@ -84,6 +84,11 @@ button#load-more:after{
     content: '>';
 }
 
+button#load-more.done{
+    opacity: 0.7;
+    outline: 0;
+}
+
 
 .post-old a:focus, .post-old a:active {
     color: #252b2e;
