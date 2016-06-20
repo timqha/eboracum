@@ -601,71 +601,7 @@
     <!-- slider -->
     <section>
         <!--            data-ride="carousel"-->
-        <div id="myCarousel" class="carousel slide">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="<?php echo bloginfo('template_url'); ?>/img/slider-1.jpg" alt="Chania">
-                    <div class="carousel-caption-2">
-                        <h3>image title 1</h3>
-                        <p>Eboracum Baroque are a group of young professional singers and instrumentalists at the start
-                            classical music careers. The group was formed in 2012 by Chris Parsons at the University of
-                            York and has performed all across the UK in prestigious venues including St John's College
-                            Chapel, Cambridge and The Temple Church, London. </p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="<?php echo bloginfo('template_url'); ?>/img/slider-1.jpg" alt="Chania">
-                    <div class="carousel-caption-2">
-                        <h3>image title 2</h3>
-                        <p>Eboracum Baroque are a group of young professional singers and instrumentalists at the start
-                            classical music careers. The group was formed in 2012 by Chris Parsons at the University of
-                            York and has performed all across the UK in prestigious venues including St John's College
-                            Chapel, Cambridge and The Temple Church, London. </p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="<?php echo bloginfo('template_url'); ?>/img/slider-1.jpg" alt="Chania">
-                    <div class="carousel-caption-2">
-                        <h3>image title 3</h3>
-                        <p>Eboracum Baroque are a group of young professional singers and instrumentalists at the start
-                            classical music careers. The group was formed in 2012 by Chris Parsons at the University of
-                            York and has performed all across the UK in prestigious venues including St John's College
-                            Chapel, Cambridge and The Temple Church, London. </p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="<?php echo bloginfo('template_url'); ?>/img/slider-1.jpg" alt="Chania">
-                    <div class="carousel-caption-2">
-                        <h3>image title 4</h3>
-                        <p>Eboracum Baroque are a group of young professional singers and instrumentalists at the start
-                            classical music careers. The group was formed in 2012 by Chris Parsons at the University of
-                            York and has performed all across the UK in prestigious venues including St John's College
-                            Chapel, Cambridge and The Temple Church, London. </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="btn-crcle-my"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="btn-crcle-my"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-            </a>
-        </div>
-
+        <?php echo do_shortcode('[wonderplugin_slider id="2"]'); ?>
     </section>
     <!-- slider -->
 
