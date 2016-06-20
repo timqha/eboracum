@@ -94,11 +94,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="post-old"><a href="#">older posts ></a></div>
-                </div>
-            </div>
+<!--            <div class="row">-->
+<!--                <div class="col-lg-12">-->
+<!--                    <div class="post-old"><a href="#">older posts ></a></div>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
         <div class="col-lg-3">
             <div class="col-lg-12">

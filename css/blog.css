@@ -67,13 +67,23 @@
     text-align: right;
 }
 
-.post-old a {
+button#load-more{
     text-transform: uppercase;
     font-family: 'Crimson Text', serif;
     font-size: 1em;
     font-weight: 600;
     color: #0b0e2e;
+    position: absolute;
+    right: 10px;
+    padding: 0;
+    margin: 0;
+    background: transparent;
 }
+button#load-more:after{
+    margin-left: 5px;
+    content: '>';
+}
+
 
 .post-old a:focus, .post-old a:active {
     color: #252b2e;
