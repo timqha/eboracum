@@ -126,7 +126,8 @@
                     } else g[c].textContent = d
                 }
                 d = "";
-                G ? (t && (E(a[c]), w && E(k[c])), w && (d += '<div class="user">' + p(k[c].innerHTML) + "</div>"), d += '<p class="tweet">' + p(a[c].innerHTML) + "</p>", y && (d = J ? d + ('<p class="timePosted"><a href="' + n[c] + '">' + g[c].getAttribute("aria-label") + "</a></p>") : d + ('<p class="timePosted">' +
+                // G ? (t && (E(a[c]), w && E(k[c])), w && (d += '<div class="user">' + p(k[c].innerHTML) + "</div>"), d += '<p class="tweet">' + p(a[c].innerHTML) + "</p>", y && (d = J ? d + ('<p class="timePosted"><a href="' + n[c] + '">' + g[c].getAttribute("aria-label") + "</a></p>") : d + ('<p class="timePosted">' +
+                G ? (t && (E(a[c]), w && E(k[c])), w && (d), d += '<p class="tweet">' + p(a[c].innerHTML) + "</p>", y && (d = J ? d + ('<p class="timePosted"><a href="' + n[c] + '">' + g[c].getAttribute("aria-label") + "</a></p>") : d + ('<p class="timePosted">' +
                 g[c].getAttribute("aria-label") + "</p>"))) : (w && (d += '<p class="user">' + k[c].textContent + "</p>"), d += '<p class="tweet">' + a[c].textContent + "</p>", y && (d += '<p class="timePosted">' + g[c].textContent + "</p>"));
                 H && (d += '<p class="interact"><a href="https://twitter.com/intent/tweet?in_reply_to=' + q[c] + '" class="twitter_reply_icon"' + (t ? ' target="_blank">' : ">") + 'Reply</a><a href="https://twitter.com/intent/retweet?tweet_id=' + q[c] + '" class="twitter_retweet_icon"' + (t ? ' target="_blank">' : ">") + 'Retweet</a><a href="https://twitter.com/intent/favorite?tweet_id=' +
                     q[c] + '" class="twitter_fav_icon"' + (t ? ' target="_blank">' : ">") + "Favorite</a></p>");
@@ -215,6 +216,7 @@ var config1 = {
     "enableLinks": true,
     "showInteraction": false,
     "showPermalinks": false,
-    "showRetweet": false
+    "showRetweet": false,
+    "showImages": false
 };
 twitterFetcher.fetch(config1);
