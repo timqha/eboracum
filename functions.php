@@ -128,4 +128,18 @@ function show_image_post(){
 	foreach ($img_mas[0] as $img)
 	echo $img;
 }
+
+
+// разбиваем контент тегом more и возвращаем в виде массива
+function split_content() {
+ 
+    global $more;
+    $more = true;
+    $content = preg_split('/<span id="more-\d+"><\/span>/i', get_the_content('more'));
+    for($c = 0, $csize = count($content); $c < $csize; $c++) {
+        $content[$c] = apply_filters('the_content', $content[$c]);
+    }
+    return $content;
+ 
+}
 ?>

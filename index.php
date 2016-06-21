@@ -541,7 +541,7 @@
 
 
                         
-                        <?php echo do_shortcode('[supsystic-gallery id=5]') ?>
+                        <?php echo do_shortcode('[supsystic-gallery id=3]'); ?>
 <!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
 <!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-1.jpg"-->
 <!--                                                  alt="content" class="imgw imgh"></div>-->

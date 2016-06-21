@@ -7,12 +7,18 @@ get_header("custom2");
         <div class="col-lg-12">
             <?php if( have_posts() ){ while( have_posts() ){ the_post(); ?>
                  <?php
-           $content = get_the_content(); // arguments remove 'more' text
+          
+$content = split_content();
+ 
+// вывод первой секции контента в отдельной колонке
+
+ 
+// вывод оставшейся части контента в другой колонке
 
 ?>
                 <div class="row">
-                   <?php echo do_shortcode("[tabs id='153']"); ?>
-                    <div class="col-md-4">
+            <?php echo $content[1];?>
+                    <!-- <div class="col-md-4">
                         <ul class="nav navbar-tabs-custom">
                             <li class="active"><a class="title" data-toggle="tab" href="#project">project</a></li>
                             <li><a class="title" data-toggle="tab" href="#about">about tudway</a></li>
@@ -21,47 +27,47 @@ get_header("custom2");
                         <div class="tab-content">
                             <div id="project" class="tab-pane fade in active">
                                 <div class="barocks">
-                                    <div class="barocks-img"><img src="<?php echo bloginfo('template_url'); ?>/img/atr-symbol.png" alt="art"></div>
+                                    <div class="barocks-img"><img src="<?php //echo bloginfo('template_url'); ?>/img/atr-symbol.png" alt="art"></div>
                                     <div class="barocks-title">
-                                        <?php the_title(); ?>
+                                        <?php //the_title(); ?>
                                     </div>
                                     
                                 </div>
                                <?
-
-echo strip_images($content);
+                    
+                    //echo strip_images($content);
                                                             
                                 ?>
                             </div>
                             <div id="about" class="tab-pane fade">
                                 <div class="barocks">
-                                    <div class="barocks-img"><img src="<?php echo bloginfo('template_url'); ?>/img/atr-symbol.png" alt="art"></div>
+                                    <div class="barocks-img"><img src="<?php //echo bloginfo('template_url'); ?>/img/atr-symbol.png" alt="art"></div>
                                     <div class="barocks-title">ABOUT THOMAS TUDWAY
                                     </div>
                                 </div>
                                 <p>
                                     <?php 
-                                    the_content();
+                                    //the_content();
                                     ?>
                                 </p>
-
+                    
                            
                             </div>
                             <div id="CD" class="tab-pane fade">
                                 <div class="barocks">
-                                    <div class="barocks-img"><img src="<?php echo bloginfo('template_url'); ?>/img/atr-symbol.png" alt="art"></div>
+                                    <div class="barocks-img"><img src="<?php //echo bloginfo('template_url'); ?>/img/atr-symbol.png" alt="art"></div>
                                     <div class="barocks-title">CD THOMAS TUDWAY
                                     </div>
                                 </div>
-                             <?php echo ($content[3]) ;?>
+                             <?php //echo ($content[3]) ;?>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-offset-1 col-md-7 gallery">
                         <div class="row">
-                            <?php show_image_post();?>
+                            <?//php show_image_post();?>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <?php } }/* конец while */ ?>
         </div>

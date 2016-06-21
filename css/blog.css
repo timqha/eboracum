@@ -78,6 +78,7 @@ button#load-more{
     padding: 0;
     margin: 0;
     background: transparent;
+    border: 0;
 }
 button#load-more:after{
     margin-left: 5px;
