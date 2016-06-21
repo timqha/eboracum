@@ -2,6 +2,8 @@
 get_header();
 get_header("custom2");
 ?>
+
+
  
     <section class="container content-text single">
         <div class="col-lg-12">
@@ -10,10 +12,10 @@ get_header("custom2");
           
 $content = split_content();
  
-// вывод первой секции контента в отдельной колонке
+// output first section content in a separate column
 
  
-// вывод оставшейся части контента в другой колонке
+// output last parts content in other column
 
 ?>
                 <div class="row">
@@ -72,5 +74,6 @@ $content = split_content();
                 <?php } }/* конец while */ ?>
         </div>
     </section>
-    <?
-get_footer();?>
+
+
+    <?php get_footer(); ?>

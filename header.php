@@ -25,7 +25,18 @@
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/app.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/twitter.js"></script>
     <?php wp_head();?>
-
+    <style>
+        h3::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 32px;
+            width: 22px;
+            height: 22px;
+            background: url("<?php echo bloginfo('template_url'); ?>/img/atr-symbol.png") 100% 100% no-repeat;
+            background-size: cover;
+        }
+    </style>
 <body>
 
 <span  id="page-top" ></span>

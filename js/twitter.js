@@ -14,6 +14,7 @@
     function C(a) {
         if (null === r) {
             for (var f = a.length, b = 0, k = document.getElementById(D), g = "<div>"; b < f;)g += "<span>" + a[b] + "</span>", b++;
+            if(window.location.pathname.toString() === "/wordpress/" || window.location.pathname.toString() == "/")
             k.innerHTML = g + "</div>";
 
         } else r(a)
