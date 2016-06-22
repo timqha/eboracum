@@ -142,4 +142,47 @@ function split_content() {
     return $content;
  
 }
+
+//function that load Past Events in index
+function EventsPost($year,$ms = null,$me = null){
+$posts = get_posts( array('post_type' => 'tribe_events') );
+//If Month start and mont end query typed
+    if($ms && $me){
+        $EventMonth = tribe_get_start_date( $post->ID, false, 'm' );
+        foreach($posts as $post){
+                 if(tribe_get_start_date( $post->ID, false, 'Y' )==$year){
+                      if(( $EventMonth >= $ms) && ($EventMonth <=$me)){
+                     $output = "<li class='past-events-ln'><div>".tribe_get_start_date( $post->ID, false, 'd.m' )."<a href=".$post->guid.">".$post->post_title."<i> ".sp_get_venue($post->ID)."</i>"."</a></div></li>";
+               echo "<ul class='nav'>".$output."</ul>";
+                     
+              }         
+                   
+                  
+                  }
+       
+            
+        }
+    }
+             else{
+//If there only year typed                 
+                 foreach($posts as $post){
+                 if(tribe_get_start_date( $post->ID, false, 'Y' )==$year){
+                     $output = "<li class='past-events-ln'><div>".tribe_get_start_date( $post->ID, false, 'd.m' )."<a href=".$post->guid.">".$post->post_title."<i> ".sp_get_venue($post->ID)."</i>"."</a></div></li>";
+               echo "<ul class='nav'>".$output."</ul>";
+                     
+              }         
+                   
+                  
+                  }
+                  }
+//If there is no events to output
+   if(!$output){
+                         echo "There is no events for this year";
+                     }
+             
+                           
+                                                             
+}
+                           
+ 
 ?>

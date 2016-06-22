@@ -6,6 +6,9 @@ get_header("custom2");
     <div class="col-lg-12">
  <?php if( have_posts() ){ while( have_posts() ){ the_post(); ?>
         <div class="row">
+           <?php 
+                               The_content();
+                                ?>
             <div class="col-md-4">
                 <ul class="nav navbar-tabs-custom">
                     <li class="active"><a class="title" data-toggle="tab" href="#project">project</a></li>
@@ -15,9 +18,7 @@ get_header("custom2");
                 <div class="tab-content">
                     <div id="project" class="tab-pane fade in active">
                         <div class="barocks">
-                            <div class="barocks-img"><img
-                                    src="<?php echo bloginfo('template_url'); ?>/img/atr-symbol.png"
-                                    alt="art"></div>
+                            <div class="barocks-img"></div>
                             <div class="barocks-title">
                             <a href="<?php the_permalink();?>">
                                  <?php the_title(); ?>
@@ -25,9 +26,7 @@ get_header("custom2");
                            
                             </div>
                         </div>
-                       <?php 
-                               The_content();
-                                ?>
+                       
                     </div>
                     <div id="about" class="tab-pane fade">
                         <div class="barocks">

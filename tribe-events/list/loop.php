@@ -20,7 +20,7 @@ $more = false;
 ?>
 
 <div class="tribe-events-loop">
-
+tribe_get_start_date()
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php do_action( 'tribe_events_inside_before_loop' ); ?>
 
