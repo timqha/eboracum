@@ -185,7 +185,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-6" id="videos">
                             <div class="barocks">
                                 <div class="barocks-img"><img
                                         src="<?php echo bloginfo('template_url'); ?>/img/atr-symbol.png"
@@ -196,7 +196,7 @@
                             </div>
                              <?php echo do_shortcode('[wonderplugin_slider id=1]'); ?>
                         </div>
-                        <div class="col-sm-6 padding-col-lg-6">
+                        <div class="col-sm-6 padding-col-lg-6" id="recordings">
                             <div class="barocks barocks-light">
                                 <div class="barocks-img"><img
                                         src="<?php echo bloginfo('template_url'); ?>/img/atr-symbol.png"
