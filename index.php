@@ -621,7 +621,7 @@
                     </table>
 
 
-                    <table id="t17j" class="tab-pane fade in active table-events">
+                    <table id="t17j" class="tab-pane fade table-events">
                         <tr>
                             <td>
                                 <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
