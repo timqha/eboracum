@@ -192,9 +192,9 @@
                                         alt="art"></div>
                                 <div class="barocks-title">videos
                                 </div>
-                                
+
                             </div>
-                             <?php echo do_shortcode('[wonderplugin_slider id=1]'); ?>
+                            <?php echo do_shortcode('[wonderplugin_slider id=1]'); ?>
                         </div>
                         <div class="col-sm-6 padding-col-lg-6" id="recordings">
                             <div class="barocks barocks-light">
@@ -300,29 +300,21 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12 col-xs-6">
-                            <div class="events-year">
-                                2016
-                            </div>
                             <ul class="filter">
-                                <li class="active"><a href="#">JAN - APR</a></li>
-                                <li><a href="#">MAY - AUG</a></li>
-                                <li><a href="#">SEP - DEC</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-12 col-xs-6">
-                            <div class="events-year">
-                                2017
-                            </div>
-                            <ul class="filter">
-                                <li class="active"><a href="#">JAN - APR</a></li>
-                                <li><a href="#">MAY - AUG</a></li>
-                                <li><a href="#">SEP - DEC</a></li>
+                                <li><div class="events-year">2016</div></li>
+                                <li class="active"><a data-toggle="tab" href="#t16j">JAN - APR</a></li>
+                                <li><a data-toggle="tab" href="#t16M">MAY - AUG</a></li>
+                                <li><a data-toggle="tab" href="#t16S">SEP - DEC</a></li>
+                                <li><div class="events-year">2016</div></li>
+                                <li><a data-toggle="tab" href="#t17j">JAN - APR</a></li>
+                                <li><a data-toggle="tab" href="#t17M">MAY - AUG</a></li>
+                                <li><a data-toggle="tab" href="#t17S">SEP - DEC</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-9 tb-events-scroll">
-                    <table class="table-events">
+                <div class="col-sm-9 tb-events-scroll tab-content">
+                    <table id="t16j" class="tab-pane fade in active table-events">
                         <tr>
                             <td>
                                 <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
@@ -423,6 +415,517 @@
                             </td>
                         </tr>
                     </table>
+
+                    <table id="t16M" class="tab-pane fade table-events">
+                        <tr>
+                            <td>
+                                <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
+                                     alt="art">
+                            </td>
+                            <td class="tac">
+                                <div class="big-number">
+                                    25
+                                </div>
+                                <div class="month">may</div>
+                            </td>
+                            <td class="line">
+                                <div class="table-title">
+                                    music for good friday
+                                </div>
+                                <div>
+                                    Holy Trinity Church, Micklegate, York<br>
+                                    19.00 - 22.00
+                                </div>
+                            </td>
+                            <td class="text-even">
+                                Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                the
+                                start classical music careers.
+                            </td>
+                            <td>
+                                <div>
+                                    <button>
+                                        book online
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="<?php echo bloginfo('template_url'); ?>/img/album-2.jpg"
+                                     alt="art">
+                            </td>
+                            <td class="tac">
+                                <div class="big-number">
+                                    16
+                                </div>
+                                <div class="month">may</div>
+                            </td>
+                            <td class="line">
+                                <div class="table-title">
+                                    concert
+                                </div>
+                                <div>
+                                    tattershall castle, lincs.<br>
+                                    19.00 - 22.00
+                                </div>
+                            </td>
+                            <td class="text-even">
+                                Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                the
+                                start classical music careers.
+                            </td>
+                            <td>
+                                <div>
+                                    <button>
+                                        book online
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
+                                     alt="art">
+                            </td>
+                            <td class="tac">
+                                <div class="big-number">
+                                    23
+                                </div>
+                                <div class="month">may</div>
+                            </td>
+                            <td class="line">
+                                <div class="table-title">
+                                    if music be the food of love
+                                </div>
+                                <div>
+                                    st benet’s church, cambridge<br>
+                                    19.00 - 22.00
+                                </div>
+                            </td>
+                            <td class="text-even">
+                                Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                the
+                                start classical music careers.
+                            </td>
+                            <td>
+                                <div>
+                                    <button>
+                                        book online
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table id="t16S" class="tab-pane fade table-events">
+                        <tr>
+                            <td>
+                                <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
+                                     alt="art">
+                            </td>
+                            <td class="tac">
+                                <div class="big-number">
+                                    25
+                                </div>
+                                <div class="month">september</div>
+                            </td>
+                            <td class="line">
+                                <div class="table-title">
+                                    music for good friday
+                                </div>
+                                <div>
+                                    Holy Trinity Church, Micklegate, York<br>
+                                    19.00 - 22.00
+                                </div>
+                            </td>
+                            <td class="text-even">
+                                Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                the
+                                start classical music careers.
+                            </td>
+                            <td>
+                                <div>
+                                    <button>
+                                        book online
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="<?php echo bloginfo('template_url'); ?>/img/album-2.jpg"
+                                     alt="art">
+                            </td>
+                            <td class="tac">
+                                <div class="big-number">
+                                    16
+                                </div>
+                                <div class="month">september</div>
+                            </td>
+                            <td class="line">
+                                <div class="table-title">
+                                    concert
+                                </div>
+                                <div>
+                                    tattershall castle, lincs.<br>
+                                    19.00 - 22.00
+                                </div>
+                            </td>
+                            <td class="text-even">
+                                Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                the
+                                start classical music careers.
+                            </td>
+                            <td>
+                                <div>
+                                    <button>
+                                        book online
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
+                                     alt="art">
+                            </td>
+                            <td class="tac">
+                                <div class="big-number">
+                                    23
+                                </div>
+                                <div class="month">september</div>
+                            </td>
+                            <td class="line">
+                                <div class="table-title">
+                                    if music be the food of love
+                                </div>
+                                <div>
+                                    st benet’s church, cambridge<br>
+                                    19.00 - 22.00
+                                </div>
+                            </td>
+                            <td class="text-even">
+                                Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                the
+                                start classical music careers.
+                            </td>
+                            <td>
+                                <div>
+                                    <button>
+                                        book online
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                    <table id="t17j" class="tab-pane fade in active table-events">
+                        <tr>
+                            <td>
+                                <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
+                                     alt="art">
+                            </td>
+                            <td class="tac">
+                                <div class="big-number">
+                                    25
+                                </div>
+                                <div class="month">january</div>
+                            </td>
+                            <td class="line">
+                                <div class="table-title">
+                                    music for good friday
+                                </div>
+                                <div>
+                                    Holy Trinity Church, Micklegate, York<br>
+                                    19.00 - 22.00
+                                </div>
+                            </td>
+                            <td class="text-even">
+                                Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                the
+                                start classical music careers.
+                            </td>
+                            <td>
+                                <div>
+                                    <button>
+                                        book online
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="<?php echo bloginfo('template_url'); ?>/img/album-2.jpg"
+                                     alt="art">
+                            </td>
+                            <td class="tac">
+                                <div class="big-number">
+                                    16
+                                </div>
+                                <div class="month">march</div>
+                            </td>
+                            <td class="line">
+                                <div class="table-title">
+                                    concert
+                                </div>
+                                <div>
+                                    tattershall castle, lincs.<br>
+                                    19.00 - 22.00
+                                </div>
+                            </td>
+                            <td class="text-even">
+                                Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                the
+                                start classical music careers.
+                            </td>
+                            <td>
+                                <div>
+                                    <button>
+                                        book online
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
+                                     alt="art">
+                            </td>
+                            <td class="tac">
+                                <div class="big-number">
+                                    23
+                                </div>
+                                <div class="month">april</div>
+                            </td>
+                            <td class="line">
+                                <div class="table-title">
+                                    if music be the food of love
+                                </div>
+                                <div>
+                                    st benet’s church, cambridge<br>
+                                    19.00 - 22.00
+                                </div>
+                            </td>
+                            <td class="text-even">
+                                Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                the
+                                start classical music careers.
+                            </td>
+                            <td>
+                                <div>
+                                    <button>
+                                        book online
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table id="t17M" class="tab-pane fade table-events">
+                        <tr>
+                            <td>
+                                <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
+                                     alt="art">
+                            </td>
+                            <td class="tac">
+                                <div class="big-number">
+                                    25
+                                </div>
+                                <div class="month">may</div>
+                            </td>
+                            <td class="line">
+                                <div class="table-title">
+                                    music for good friday
+                                </div>
+                                <div>
+                                    Holy Trinity Church, Micklegate, York<br>
+                                    19.00 - 22.00
+                                </div>
+                            </td>
+                            <td class="text-even">
+                                Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                the
+                                start classical music careers.
+                            </td>
+                            <td>
+                                <div>
+                                    <button>
+                                        book online
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="<?php echo bloginfo('template_url'); ?>/img/album-2.jpg"
+                                     alt="art">
+                            </td>
+                            <td class="tac">
+                                <div class="big-number">
+                                    16
+                                </div>
+                                <div class="month">may</div>
+                            </td>
+                            <td class="line">
+                                <div class="table-title">
+                                    concert
+                                </div>
+                                <div>
+                                    tattershall castle, lincs.<br>
+                                    19.00 - 22.00
+                                </div>
+                            </td>
+                            <td class="text-even">
+                                Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                the
+                                start classical music careers.
+                            </td>
+                            <td>
+                                <div>
+                                    <button>
+                                        book online
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
+                                     alt="art">
+                            </td>
+                            <td class="tac">
+                                <div class="big-number">
+                                    23
+                                </div>
+                                <div class="month">may</div>
+                            </td>
+                            <td class="line">
+                                <div class="table-title">
+                                    if music be the food of love
+                                </div>
+                                <div>
+                                    st benet’s church, cambridge<br>
+                                    19.00 - 22.00
+                                </div>
+                            </td>
+                            <td class="text-even">
+                                Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                the
+                                start classical music careers.
+                            </td>
+                            <td>
+                                <div>
+                                    <button>
+                                        book online
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table id="t17S" class="tab-pane fade table-events">
+                        <tr>
+                            <td>
+                                <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
+                                     alt="art">
+                            </td>
+                            <td class="tac">
+                                <div class="big-number">
+                                    25
+                                </div>
+                                <div class="month">september</div>
+                            </td>
+                            <td class="line">
+                                <div class="table-title">
+                                    music for good friday
+                                </div>
+                                <div>
+                                    Holy Trinity Church, Micklegate, York<br>
+                                    19.00 - 22.00
+                                </div>
+                            </td>
+                            <td class="text-even">
+                                Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                the
+                                start classical music careers.
+                            </td>
+                            <td>
+                                <div>
+                                    <button>
+                                        book online
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="<?php echo bloginfo('template_url'); ?>/img/album-2.jpg"
+                                     alt="art">
+                            </td>
+                            <td class="tac">
+                                <div class="big-number">
+                                    16
+                                </div>
+                                <div class="month">september</div>
+                            </td>
+                            <td class="line">
+                                <div class="table-title">
+                                    concert
+                                </div>
+                                <div>
+                                    tattershall castle, lincs.<br>
+                                    19.00 - 22.00
+                                </div>
+                            </td>
+                            <td class="text-even">
+                                Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                the
+                                start classical music careers.
+                            </td>
+                            <td>
+                                <div>
+                                    <button>
+                                        book online
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
+                                     alt="art">
+                            </td>
+                            <td class="tac">
+                                <div class="big-number">
+                                    23
+                                </div>
+                                <div class="month">september</div>
+                            </td>
+                            <td class="line">
+                                <div class="table-title">
+                                    if music be the food of love
+                                </div>
+                                <div>
+                                    st benet’s church, cambridge<br>
+                                    19.00 - 22.00
+                                </div>
+                            </td>
+                            <td class="text-even">
+                                Eboracum Baroque are a group of young professional singers and instrumentalists at
+                                the
+                                start classical music careers.
+                            </td>
+                            <td>
+                                <div>
+                                    <button>
+                                        book online
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
 
             </div>
@@ -461,27 +964,27 @@
                                 <li><a class="title" data-toggle="tab" href="#year2013">2013</a></li>
                                 <li><a class="title" data-toggle="tab" href="#year2012">2012</a></li>
                             </ul>
-                            
+
                             <!-- test -->
-                       
+
                             <div class="tab-content">
                                 <div id="year2015" class="tab-pane fade in active">
-                                    <?php 
+                                    <?php
                                     EventsPost("2015");
-                            ?>
+                                    ?>
                                 </div>
                                 <div id="year2014" class="tab-pane fade">
-                                   <?php 
+                                    <?php
                                     EventsPost("2014");
                                     ?>
                                 </div>
                                 <div id="year2013" class="tab-pane fade">
-                                      <?php 
+                                    <?php
                                     EventsPost("2013");
                                     ?>
                                 </div>
                                 <div id="year2012" class="tab-pane fade">
-                                     <?php 
+                                    <?php
                                     EventsPost("2012");
                                     ?>
                                 </div>
@@ -551,57 +1054,68 @@
                     <div class="row">
 
 
-                        
                         <?php echo do_shortcode('[supsystic-gallery id=3]'); ?>
-<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
-<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-1.jpg"-->
-<!--                                                  alt="content" class="imgw imgh"></div>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
-<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-2.jpg"-->
-<!--                                                  alt="content" class="imgw imgh"></div>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
-<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-3.jpg"-->
-<!--                                                  alt="content" class="imgw imgh"></div>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
-<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-4.jpg"-->
-<!--                                                  alt="content" class="imgw imgh"></div>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
-<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-5.jpg"-->
-<!--                                                  alt="content" class="imgw imgh"></div>-->
-<!--                        </div>-->
-<!---->
-<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
-<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-6.jpg"-->
-<!--                                                  alt="content" class="imgw imgh"></div>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
-<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-7.jpg"-->
-<!--                                                  alt="content" class="imgw imgh"></div>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
-<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-8.jpg"-->
-<!--                                                  alt="content" class="imgw imgh"></div>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
-<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-9.jpg"-->
-<!--                                                  alt="content" class="imgw imgh"></div>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
-<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-10.jpg"-->
-<!--                                                  alt="content" class="imgw imgh"></div>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
-<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-11.jpg"-->
-<!--                                                  alt="content" class="imgw imgh"></div>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
-<!--                            <div class="row"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/content-12.jpg"-->
-<!--                                                  alt="content" class="imgw imgh"></div>-->
-<!--                        </div>-->
+                        <!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+                        <!--                            <div class="row"><img src="-->
+                        <?php //echo bloginfo('template_url'); ?><!--/img/content-1.jpg"-->
+                        <!--                                                  alt="content" class="imgw imgh"></div>-->
+                        <!--                        </div>-->
+                        <!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+                        <!--                            <div class="row"><img src="-->
+                        <?php //echo bloginfo('template_url'); ?><!--/img/content-2.jpg"-->
+                        <!--                                                  alt="content" class="imgw imgh"></div>-->
+                        <!--                        </div>-->
+                        <!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+                        <!--                            <div class="row"><img src="-->
+                        <?php //echo bloginfo('template_url'); ?><!--/img/content-3.jpg"-->
+                        <!--                                                  alt="content" class="imgw imgh"></div>-->
+                        <!--                        </div>-->
+                        <!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+                        <!--                            <div class="row"><img src="-->
+                        <?php //echo bloginfo('template_url'); ?><!--/img/content-4.jpg"-->
+                        <!--                                                  alt="content" class="imgw imgh"></div>-->
+                        <!--                        </div>-->
+                        <!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+                        <!--                            <div class="row"><img src="-->
+                        <?php //echo bloginfo('template_url'); ?><!--/img/content-5.jpg"-->
+                        <!--                                                  alt="content" class="imgw imgh"></div>-->
+                        <!--                        </div>-->
+                        <!---->
+                        <!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+                        <!--                            <div class="row"><img src="-->
+                        <?php //echo bloginfo('template_url'); ?><!--/img/content-6.jpg"-->
+                        <!--                                                  alt="content" class="imgw imgh"></div>-->
+                        <!--                        </div>-->
+                        <!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+                        <!--                            <div class="row"><img src="-->
+                        <?php //echo bloginfo('template_url'); ?><!--/img/content-7.jpg"-->
+                        <!--                                                  alt="content" class="imgw imgh"></div>-->
+                        <!--                        </div>-->
+                        <!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+                        <!--                            <div class="row"><img src="-->
+                        <?php //echo bloginfo('template_url'); ?><!--/img/content-8.jpg"-->
+                        <!--                                                  alt="content" class="imgw imgh"></div>-->
+                        <!--                        </div>-->
+                        <!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+                        <!--                            <div class="row"><img src="-->
+                        <?php //echo bloginfo('template_url'); ?><!--/img/content-9.jpg"-->
+                        <!--                                                  alt="content" class="imgw imgh"></div>-->
+                        <!--                        </div>-->
+                        <!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+                        <!--                            <div class="row"><img src="-->
+                        <?php //echo bloginfo('template_url'); ?><!--/img/content-10.jpg"-->
+                        <!--                                                  alt="content" class="imgw imgh"></div>-->
+                        <!--                        </div>-->
+                        <!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+                        <!--                            <div class="row"><img src="-->
+                        <?php //echo bloginfo('template_url'); ?><!--/img/content-11.jpg"-->
+                        <!--                                                  alt="content" class="imgw imgh"></div>-->
+                        <!--                        </div>-->
+                        <!--                        <div class="col-md-3 col-sm-6 col-xs-3">-->
+                        <!--                            <div class="row"><img src="-->
+                        <?php //echo bloginfo('template_url'); ?><!--/img/content-12.jpg"-->
+                        <!--                                                  alt="content" class="imgw imgh"></div>-->
+                        <!--                        </div>-->
                     </div>
 
                 </div>
@@ -642,7 +1156,8 @@
                                 <div class="col-sm-6 input-form">
                                     <input class="imgw" type="text" placeholder="* your name">
                                     <input class="imgw" type="text" placeholder="* your e-mail">
-                                    <textarea name="message" cols="60" rows="10" placeholder="* your message here"></textarea>
+                                    <textarea name="message" cols="60" rows="10"
+                                              placeholder="* your message here"></textarea>
                                     <button class="input-form-submit">submit</button>
                                 </div>
                                 <div class="col-sm-6">

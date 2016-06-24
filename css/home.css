@@ -193,7 +193,7 @@ table.table-events {
 }
 
 .events .barocks {
-    padding: 11px 0 21px 0;
+    padding: 11px 0 16px 0;
 }
 
 .filter {
@@ -207,21 +207,28 @@ table.table-events {
     color: #0c0c2f;
 }
 
+.filter li{
+    position: relative;
+}
+
 .filter .active:before {
     content: '';
     position: absolute;
-    top: 9px;
-    left: 7px;
+    top: 5px;
+    left: -10px;
     width: 2px;
     height: 14px;
     background-color: #0c0f2d;
 }
 
 .events-year {
-    padding: 5px;
+    padding: 10px 5px 5px;
     font-size: 13pt;
     font-family: "Open Sans", sans-serif;
     color: #706a65;
+    display: block;
+    position: relative;
+    left: -15px;
 }
 
 .table-events tr td {
