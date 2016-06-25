@@ -159,6 +159,8 @@ table.table-events {
 .table-events img {
     width: 100%;
     min-width: 98px;
+    height: 102px;
+    
 }
 
 .table-events tr {
@@ -186,6 +188,13 @@ table.table-events {
     min-width: 100px;
     min-height: 32px;
     padding-top: 2px;
+}
+
+.table-events a {
+    font-family: "Crimson Text", serif;
+    text-transform: uppercase;
+    background-color: #303056;
+    color: #fff;
 }
 
 .table-events .table-title {

@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 } ?>
 
-<h3 class="screen-reader-text" tabindex="0"><?php echo esc_html( sprintf( esc_html__( '%s List Navigation', 'the-events-calendar' ), $events_label_plural ) ); ?></h3>
+<!-- <h3 class="screen-reader-text" tabindex="0"><?php// echo esc_html( sprintf( esc_html__( '%s List Navigation', 'the-events-calendar' ), $events_label_plural ) ); ?></h3> -->
 <ul class="tribe-events-sub-nav">
 	<!-- Left Navigation -->
 
@@ -35,3 +35,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</li><!-- .tribe-events-nav-right -->
 	<?php endif; ?>
 </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
