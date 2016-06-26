@@ -254,6 +254,10 @@ a:focus {
 
 }
 
+.pushy.pushy-left{
+    text-transform: uppercase;
+}
+
 /******   HEADER END   ******/
 
 /******   footer    ******/
