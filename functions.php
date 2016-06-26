@@ -28,8 +28,14 @@ function first_post_image() {
  else return '<img src="'.$first_img.'">';
 }
 
-register_nav_menus(array( 'top' => 'top menu', 
-			'bottom' => 'Нижнее меню' ));
+register_nav_menus(array(
+    'top' => 'top menu',
+    'footer-menu-1' => __('Footer Menu 1'),
+    'footer-menu-2' => __('Footer Menu 2'),
+    'footer-menu-3' => __('Footer Menu 3'),
+    'footer-menu-4' => __('Footer Menu 4'),
+    'footer-menu-5' => __('Footer Menu 5'),
+    'bottom' => 'Нижнее меню'));
 
 function sh_collapse($atts, $content = null) {
 // переменные которые приходят

@@ -180,7 +180,7 @@
     </section>
 
     <!-- videos recording -->
-    <section class=" content-text videos-recordings">
+    <section class=" content-text videos-recordings" id="recordings">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -935,7 +935,7 @@
     </section>
 
     <!-- PAST EVENTS -->
-    <section class="content-text past-events" id="past-events">
+    <section class="content-text past-events" id="past-gallery">
         <div class="container">
             <div class="row col-lg-12">
                 <div class="col-sm-4">
@@ -1134,7 +1134,7 @@
 
 
     <!-- contact us -->
-    <section class="content-text contact-us">
+    <section class="content-text contact-us" id="join_newsleter">
 
         <div class="container">
             <div class="row">

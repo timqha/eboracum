@@ -273,6 +273,7 @@ a:focus {
     /*font-size: 10.93pt;*/
     font-size: 0.91424em;
     color: #fff;
+    padding-bottom: 30px;
     position: relative;
 }
 
@@ -290,7 +291,16 @@ a:focus {
     padding-bottom: 29px;
 }
 
-.footer ul.nav > li:nth-child(2):after, .footer ul.nav > li:nth-child(3):after {
+.footer .nav>li>a {
+     padding: 0;
+    color: #a79b93;
+}
+
+.footer .nav>li>a:focus, .footer .nav>li>a:hover {
+    background-color: transparent;
+}
+
+.footer ul.nav > li:nth-child(1):after, .footer ul.nav > li:nth-child(2):after {
     content: '';
     position: absolute;
     width: 120%;
