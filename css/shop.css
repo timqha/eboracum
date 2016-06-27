@@ -161,14 +161,14 @@ button.close.my-modal-close {
     transform: scale(0.3, 0.8);
 }
 
-.ticket input.number-ticket-modal {
-    width: 100%;
-    border: none;
-    text-align: center;
-    font-size: 1em;
-    min-width: 25px;
-    height: 25px;
-}
+/*.ticket input.number-ticket-modal {*/
+/*width: 100%;*/
+/*border: none;*/
+/*text-align: center;*/
+/*font-size: 1em;*/
+/*min-width: 25px;*/
+/*height: 25px;*/
+/*}*/
 
 .ticket .ticket-orders fieldset label, .ticket span {
     font-family: "Crimson Text", serif;
@@ -177,7 +177,7 @@ button.close.my-modal-close {
     color: #8c8380;
 }
 
-.ticket .ticket-orders fieldset p span{
+.ticket .ticket-orders fieldset p span {
     position: relative;
     white-space: normal;
 }
@@ -234,11 +234,30 @@ button.close.my-modal-close {
     border: 1px solid #d9d9dd;
 }
 
-.table-events td {
+/*.table-events td {
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     font-size: 10.75pt;
     color: #9e9e9e;
+}*/
+
+.single .mt_cart table th {
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-size: 10.75pt;
+    color: #9e9e9e;
+    text-align: left;
+}
+
+.single .mt_cart table caption, .single .mt_purchase_path {
+    display: none;
+}
+
+.single .mt_cart_total {
+    font-family: 'Open Sans', sans-serif;
+    color: #9e9e9e;
+    text-transform: uppercase;
+    font-size: 15.03pt;
 }
 
 .table-events td.gg {
@@ -271,18 +290,21 @@ button.close.my-modal-close {
     text-transform: uppercase;
 }
 
-.CHECKOUT-section table.table-events {
+.CHECKOUT-section table.table-events, .single .mt_cart table {
     position: relative;
     border-collapse: separate;
     border-spacing: 0 22px;
 }
 
-.CHECKOUT-section tr td {
+.single .mt_cart table th, .single .mt_cart table td {
     position: relative;
-    /*border-bottom: 3px dotted #c7c0bb;*/
 }
 
-.CHECKOUT-section tr td:after, .CHECKOUT-section tr th:before {
+/*.CHECKOUT-section tr td {*/
+/*position: relative;*/
+/*}*/
+
+.single .mt_cart table th:before, .single .mt_cart table td:after, .CHECKOUT-section tr td:after, .CHECKOUT-section tr th:before {
     position: absolute;
     content: '';
     width: 333%;
@@ -290,6 +312,91 @@ button.close.my-modal-close {
     left: -117%;
     bottom: -15px;
     transform: scale(0.3, 0.8);
+}
+
+.single .mt_cart table th a {
+    font-size: 19pt;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    color: #0c0c2f;
+    position: relative;
+    width: 290px;
+    /*overflow-x: scroll;*/
+    /*display:inline-block;*/
+    /*width: 290px;*/
+    /*overflow:hidden !important;*/
+    /*text-overflow: ellipsis;*/
+}
+
+.single .mt_cart .wp-post-image {
+    width: 125px;
+    height: 102px;
+    margin-right: 140px;
+    position: relative;
+}
+
+.single .mt_cart table th a:before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: -256%;
+    height: 200px;
+    border-left: 3px dashed #c7c0bb;
+    transform: scale(0.8, 0.3);
+}
+
+.single .mt_cart table tbody th{
+    width: 65%;
+}
+
+.single .mt_cart table em {
+    display: block;
+}
+
+.single .mt_cart table th .mt-datetime {
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14pt;
+    color: #0c0f2d;
+    display: block;
+    white-space: normal;
+    width: 110px;
+    position: absolute;
+    top: 8px;
+    left: 135px;
+}
+
+.single .mt_cart .mt-update-column button {
+    border-radius: 100%;
+    background: rgba(197,193,191,0.75);
+    color: #fff;
+    width: 24px;
+    height: 27px;
+    font-weight: 900;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    padding: 0;
+    margin-right: 5px;
+    font-size: 15pt;
+}
+.single .mt_cart .mt-update-column button:last-child {
+    border: none;
+    font-size: 10pt;
+    display: inline-block;
+    text-align: center;
+    background: #c5c1bf;
+    width: 29px;
+    height: 29px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3px;
+    white-space: nowrap;
+    margin-left: 15px;
 }
 
 .CHECKOUT-section select:active,
