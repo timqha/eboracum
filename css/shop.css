@@ -154,10 +154,11 @@ button.close.my-modal-close {
     content: '';
     position: absolute;
     bottom: 25px;
-    left: 0;
-    height: 1px;
-    width: 80%;
-    background-color: #d0cac6;
+    left: -105%;
+    width: 300%;
+    top: -50%;
+    border-bottom: 3px dashed #c7c0bb;
+    transform: scale(0.3, 0.8);
 }
 
 .ticket input.number-ticket-modal {

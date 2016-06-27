@@ -4,54 +4,6 @@
     }
 </style>
 
-<!-- Pushy Menu -->
-<!--<nav class="pushy pushy-left">-->
-<!--    <ul class="nav">-->
-<!--        <!-- Submenu -->-->
-<!--        <li class="pushy-submenu">-->
-<!--            <a>ABOUT</a>-->
-<!--            <ul>-->
-<!--                <li class="pushy-link"><a href="#">VIDEOS</a></li>-->
-<!--                <li class="pushy-link"><a href="#">RECORDINGS</a></li>-->
-<!--                <li class="pushy-link"><a href="#">EDUCATION</a></li>-->
-<!--            </ul>-->
-<!--        </li>-->
-<!--        <li class="pushy-submenu">-->
-<!--            <a>EVENTS</a>-->
-<!--            <ul>-->
-<!--                <li class="pushy-link"><a href="#">UPCOMING</a></li>-->
-<!--                <li class="pushy-link"><a href="#">PAST</a></li>-->
-<!--                <li class="pushy-link"><a href="#">GALLERY</a></li>-->
-<!--            </ul>-->
-<!--        </li>-->
-<!--        <li class="pushy-submenu">-->
-<!--            <a>NEWS</a>-->
-<!--            <ul>-->
-<!--                <li class="pushy-link"><a href="#">BLOG</a></li>-->
-<!--                <li class="pushy-link"><a href="#">REVIEWS</a></li>-->
-<!--                <li class="pushy-link"><a href="#">THOMAS TUDWAY-->
-<!--                        PROJECT</a></li>-->
-<!--            </ul>-->
-<!--        </li>-->
-<!--        <li class="pushy-submenu">-->
-<!--            <a>SHOP</a>-->
-<!--            <ul>-->
-<!--                <li class="pushy-link"><a href="#">SHOP</a></li>-->
-<!--                <li class="pushy-link"><a href="#">SUPPORT US</a></li>-->
-<!--                <li class="pushy-link"><a href="#">BUY TICKETS</a></li>-->
-<!--            </ul>-->
-<!--        </li>-->
-<!--        <li class="pushy-submenu">-->
-<!--            <a>CONTACT</a>-->
-<!--            <ul>-->
-<!--                <li class="pushy-link"><a href="#">CONTACT</a></li>-->
-<!--                <li class="pushy-link"><a href="#">JOIN NEWSLETTER</a></li>-->
-<!--            </ul>-->
-<!--        </li>-->
-<!--<!--        <li class="pushy-link"><a href="#">Item 1</a></li>-->-->
-<!---->
-<!--    </ul>-->
-<!--</nav>-->
 
 <nav class="pushy pushy-left">
     <ul class="nav">
@@ -59,50 +11,23 @@
         <li class="pushy-submenu">
             <a>ABOUT</a>
             <?php wp_nav_menu(array( 'theme_location' => 'footer-menu-1', 'menu_class' => 'nav' )); ?>
-<!--            <ul>-->
-<!--                <li class="pushy-link"><a href="#">VIDEOS</a></li>-->
-<!--                <li class="pushy-link"><a href="#">RECORDINGS</a></li>-->
-<!--                <li class="pushy-link"><a href="#">EDUCATION</a></li>-->
-<!--            </ul>-->
         </li>
         <li class="pushy-submenu">
             <a>EVENTS</a>
             <?php wp_nav_menu(array( 'theme_location' => 'footer-menu-2', 'menu_class' => 'nav' )); ?>
-<!--            <ul>-->
-<!--                <li class="pushy-link"><a href="#">UPCOMING</a></li>-->
-<!--                <li class="pushy-link"><a href="#">PAST</a></li>-->
-<!--                <li class="pushy-link"><a href="#">GALLERY</a></li>-->
-<!--            </ul>-->
         </li>
         <li class="pushy-submenu">
             <a>NEWS</a>
             <?php wp_nav_menu(array( 'theme_location' => 'footer-menu-3', 'menu_class' => 'nav' )); ?>
-<!--            <ul>-->
-<!--                <li class="pushy-link"><a href="#">BLOG</a></li>-->
-<!--                <li class="pushy-link"><a href="#">REVIEWS</a></li>-->
-<!--                <li class="pushy-link"><a href="#">THOMAS TUDWAY-->
-<!--                        PROJECT</a></li>-->
-<!--            </ul>-->
         </li>
         <li class="pushy-submenu">
             <a>SHOP</a>
             <?php wp_nav_menu(array( 'theme_location' => 'footer-menu-4', 'menu_class' => 'nav' )); ?>
-<!--            <ul>-->
-<!--                <li class="pushy-link"><a href="#">SHOP</a></li>-->
-<!--                <li class="pushy-link"><a href="#">SUPPORT US</a></li>-->
-<!--                <li class="pushy-link"><a href="#">BUY TICKETS</a></li>-->
-<!--            </ul>-->
         </li>
         <li class="pushy-submenu">
             <a>CONTACT</a>
             <?php wp_nav_menu(array( 'theme_location' => 'footer-menu-5', 'menu_class' => 'nav' )); ?>
-<!--            <ul>-->
-<!--                <li class="pushy-link"><a href="#">CONTACT</a></li>-->
-<!--                <li class="pushy-link"><a href="#">JOIN NEWSLETTER</a></li>-->
-<!--            </ul>-->
         </li>
-<!--        <li class="pushy-link"><a href="#">Item 1</a></li>-->
-
     </ul>
 </nav>
 

@@ -265,13 +265,6 @@ table.table-events {
     height: 200%;
     border-left: 3px dashed #c7c0bb;
     transform: scale(0.8, 0.3);
-    /* content: ''; */
-    /* position: absolute; */
-    /* left: 0; */
-    /* top: 12%; */
-    /* height: 78%; */
-    /* background-color: #dedad8; */
-    /* width: 2px; */
 }
 
 /*events*/
