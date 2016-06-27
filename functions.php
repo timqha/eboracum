@@ -164,12 +164,9 @@ $posts = get_posts( array('post_type' => 'tribe_events') );
                           
                           $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'>"."<div class='big-number'>".tribe_get_start_date( $post->ID, false, 'd' )."</div>"."<div class='month'>".tribe_get_start_date( $post->ID, false, 'F' )."</td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."<br>".tribe_get_start_date( $post->ID, false, 'H.i ' ).tribe_get_end_date( $post->ID, false, '- H.i' )."</div></td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
                                 <div>
-                                
-                                    <button>
                                         <a href=".$post->guid.">
                                  book online
                                 </a>
-                                    </button>
                                 </div>
                             </td>";
                           
@@ -192,18 +189,34 @@ $posts = get_posts( array('post_type' => 'tribe_events') );
                echo "<ul class='nav'>".$output."</ul>";
                      
               }         
-                   
-                  
                   }
                   }
 //If there is no events to output
    if(!$output){
                          echo "There is no events for this year";
                      }
-             
-                           
-                                                             
 }
-                           
- 
+
+function EventsCat($cat){
+    $posts = get_posts( array('post_type' => 'tribe_events') );
+    foreach($posts as $post){
+                 if(tribe_event_in_category($cat,$post->ID)){
+                          
+                          $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'>"."<div class='big-number'>".tribe_get_start_date( $post->ID, false, 'd' )."</div>"."<div class='month'>".tribe_get_start_date( $post->ID, false, 'F' )."</td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."<br>".tribe_get_start_date( $post->ID, false, 'H.i ' ).tribe_get_end_date( $post->ID, false, '- H.i' )."</div></td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
+                                <div>
+                                        <a href=".$post->guid.">
+                                 book online
+                                </a>
+                                </div>
+                            </td>";
+                          
+                     
+               echo "<tr>".$output."</tr>";
+                     
+              }
+                  }
+     if(!$output){
+            echo "There is no posts yet";
+        }
+}
 ?>

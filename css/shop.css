@@ -69,7 +69,7 @@
 }
 
 .ticket-section .tb-events-scroll {
-    height: 367px;
+    max-height: 367px;
 }
 
 /* modal */

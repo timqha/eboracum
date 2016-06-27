@@ -2,6 +2,11 @@
 .imgw {
     width: 100%;
 }
+.imgwin img{
+    display:block;
+    max-width:100%;
+    max-height: 500px
+}
 
 .text-deco {
     border-bottom: 1px #a7a39a solid;
@@ -136,8 +141,8 @@ table.table-events {
 }
 
 .tb-events-scroll {
-    overflow-y: scroll;
-    height: 281px;
+    
+    max-height: 281px;
 }
 
 .table-events tr td:nth-child(1) {
@@ -192,9 +197,17 @@ table.table-events {
 
 .table-events a {
     font-family: "Crimson Text", serif;
+    font-weight: 600;
     text-transform: uppercase;
+    font-size: 0.794635em;
     background-color: #303056;
     color: #fff;
+    border: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    min-width: 100px;
+    min-height: 32px;
+    padding: 10px 15px;
 }
 
 .table-events .table-title {
