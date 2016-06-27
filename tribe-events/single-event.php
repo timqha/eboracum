@@ -351,21 +351,21 @@ $event_id = get_the_ID();
 
                             <div class="row ticket">
                                <?php echo do_shortcode("[ticket event='".$event_id."']");?>
-                                <div class="col-xs-1"><input class="number-ticket-modal" type="text" placeholder="0">
-                                </div>
-                                <div class="col-xs-10"><span>adult ticket - £12</span></div>
+<!--                                <div class="col-xs-1"><input class="number-ticket-modal" type="text" placeholder="0">-->
+<!--                                </div>-->
+<!--                                <div class="col-xs-10"><span>adult ticket - £12</span></div>-->
                             </div>
 
-                            <div class="row ticket">
-                                <div class="col-xs-1"><input class="number-ticket-modal" type="text" placeholder="0">
-                                </div>
-                                <div class="col-xs-10"><span>concession/nus ticket - £8</span></div>
-                                
-                            </div>
-
-                            <button class="button-my-blue">
-                                add to cart
-                            </button>
+<!--                            <div class="row ticket">-->
+<!--                                <div class="col-xs-1"><input class="number-ticket-modal" type="text" placeholder="0">-->
+<!--                                </div>-->
+<!--                                <div class="col-xs-10"><span>concession/nus ticket - £8</span></div>-->
+<!--                                -->
+<!--                            </div>-->
+<!---->
+<!--                            <button class="button-my-blue">-->
+<!--                                add to cart-->
+<!--                            </button>-->
                         </div>
                         <div class="col-xs-6">
                              <div class="imgwin">

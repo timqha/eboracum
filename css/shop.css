@@ -45,7 +45,7 @@
     color: #706a65;
 }
 
-.button-my-blue {
+.button-my-blue, .ticket .ticket-orders fieldset button {
     font-family: "Crimson Text", serif;
     font-weight: 600;
     text-transform: uppercase;
@@ -147,7 +147,7 @@ button.close.my-modal-close {
     position: relative;
     font-family: "Open Sans", sans-serif;
     font-size: 10.75pt;
-    padding-bottom: 52px;
+    padding-bottom: 40px;
 }
 
 .modal-place:after {
@@ -170,17 +170,44 @@ button.close.my-modal-close {
     height: 25px;
 }
 
-.ticket span {
+.ticket .ticket-orders fieldset label, .ticket span {
     font-family: "Crimson Text", serif;
+    font-weight: 400;
     font-size: 12pt;
     color: #8c8380;
+}
+
+.ticket .ticket-orders fieldset p span{
+    position: relative;
+    white-space: normal;
+}
+
+.ticket .ticket-orders fieldset p span:first-child:before {
+    content: '-';
+    position: absolute;
+    left: -25px;
+}
+
+.ticket .ticket-orders fieldset label {
+    margin-left: 15px;
+    margin-right: 35px;
+}
+
+.ticket .ticket-orders fieldset input {
+    float: left;
+    width: 10%;
+    border: none;
+    text-align: center;
+    font-size: 1em;
+    min-width: 25px;
+    height: 25px;
 }
 
 .ticket {
     padding-bottom: 10px;
 }
 
-.modal-body .button-my-blue {
+.modal-body .button-my-blue, .ticket .ticket-orders fieldset button {
     margin-top: 10px;
     width: 133px;
 }
@@ -317,28 +344,40 @@ button.close.my-modal-close {
     padding: 3px;
 }
 
-.title-summary{
-    font-family:"Open Sans", sans-serif;
+.title-summary {
+    font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     font-size: 15.95pt;
     color: #9e9e9e;
     padding: 28px 0 15px;
 }
 
-.text-summary{
+.text-summary {
     font-family: "Crimson Text", serif;
     color: #706a65;
     font-size: 14pt;
 }
-.text-summary b{
+
+.text-summary b {
     color: #292b41;
 }
 
-.tb-events-scroll-success{
+.tb-events-scroll-success {
     overflow-y: scroll;
     height: 435px;
 }
+
 .tb-events-scroll-checkout {
     overflow-y: scroll;
     height: 465px;
 }
+
+.ticket .ticket-orders.ticket-orders legend, .ticket .ticket-orders .tickets-remaining {
+    display: none;
+}
+
+.ticket .ticket-orders fieldset {
+    margin: 1em 15px;
+    background-color: transparent;
+}
+
