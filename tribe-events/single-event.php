@@ -69,9 +69,10 @@ $event_id = get_the_ID();
                 <div class="text">
                 <?php the_content();?>
               <?php if(!tribe_event_in_category("Music")){
+                        if(!tribe_event_in_category("Support",$event_id)){
                     echo "<h4>Details</h4><br>Date:<i> ".tribe_get_start_date($event_id, false, 'm.d' )."</i><br>";?>
                 <?php echo "Time: <i>".tribe_get_start_date($event_id, false, 'H.i ' ).tribe_get_end_date($event_id, false, '- H.i' )."<br></i>Place: <i>".tribe_get_address($event_id)." ".tribe_get_city($event_id)."</i>";
-                    ?>
+                        }?>
                 </div>
                 <div class="col-xs-offset-9 col-xs-3">
                     <button data-toggle="modal" data-target="#myModal" class="button-my-blue">
@@ -97,7 +98,7 @@ $event_id = get_the_ID();
         </div>
 </section>
 <section class=" content-text ticket-section">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
                 <ul class="nav navbar-tabs-custom">
@@ -109,215 +110,19 @@ $event_id = get_the_ID();
                 <div class="row">
                     <div class="col-lg-12 tb-events-scroll tab-content">
                         <table id="tickets" class="tab-pane fade in active table-events">
-                           <?php EventsCat("Tickets")?>
+                           <?php EventsCat("Tickets");?>
                         </table>
 
                         <table id="music" class="tab-pane fade table-events">
-                           <?php EventsCat("Music")?>
+                           <?php EventsCat("Music");?>
                         </table>
 
                         <table id="support_us" class="tab-pane fade table-events">
-                            <tr>
-                                <td>
-                                    <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
-                                         alt="art">
-                                </td>
-                                <td class="tac">
-                                    <div class="big-number">
-                                        25
-                                    </div>
-                                    <div class="month">january</div>
-                                </td>
-                                <td class="line">
-                                    <div class="table-title">
-                                        music for good friday
-                                    </div>
-                                    <div>
-                                        Holy Trinity Church, Micklegate, York<br>
-                                        19.00 - 22.00
-                                    </div>
-                                </td>
-                                <td class="text-even">
-                                    Eboracum Baroque are a group of young professional singers and instrumentalists at
-                                    the
-                                    start classical music careers.
-                                </td>
-                                <td>
-                                    <div>
-                                        <button data-toggle="modal" data-target="#myModal">
-                                            book online
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="<?php echo bloginfo('template_url'); ?>/img/album-2.jpg"
-                                         alt="art">
-                                </td>
-                                <td class="tac">
-                                    <div class="big-number">
-                                        16
-                                    </div>
-                                    <div class="month">march</div>
-                                </td>
-                                <td class="line">
-                                    <div class="table-title">
-                                        concert
-                                    </div>
-                                    <div>
-                                        tattershall castle, lincs.<br>
-                                        19.00 - 22.00
-                                    </div>
-                                </td>
-                                <td class="text-even">
-                                    Eboracum Baroque are a group of young professional singers and instrumentalists at
-                                    the
-                                    start classical music careers.
-                                </td>
-                                <td>
-                                    <div>
-                                        <button data-toggle="modal" data-target="#myModal">
-                                            book online
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
-                                         alt="art">
-                                </td>
-                                <td class="tac">
-                                    <div class="big-number">
-                                        23
-                                    </div>
-                                    <div class="month">april</div>
-                                </td>
-                                <td class="line">
-                                    <div class="table-title">
-                                        if music be the food of love
-                                    </div>
-                                    <div>
-                                        st benet’s church, cambridge<br>
-                                        19.00 - 22.00
-                                    </div>
-                                </td>
-                                <td class="text-even">
-                                    Eboracum Baroque are a group of young professional singers and instrumentalists at
-                                    the
-                                    start classical music careers.
-                                </td>
-                                <td>
-                                    <div>
-                                        <button data-toggle="modal" data-target="#myModal">
-                                            book online
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
+                           <?php EventsCat("Support");?>
                         </table>
 
                         <table id="other" class="tab-pane fade table-events">
-                            <tr>
-                                <td>
-                                    <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
-                                         alt="art">
-                                </td>
-                                <td class="tac">
-                                    <div class="big-number">
-
-                                    </div>
-                                    <div class="month"></div>
-                                </td>
-                                <td class="line">
-                                    <div class="table-title">
-                                        music for good friday
-                                    </div>
-                                    <div>
-                                        Holy Trinity Church, Micklegate, York<br>
-                                        19.00 - 22.00
-                                    </div>
-                                </td>
-                                <td class="text-even">
-                                    Eboracum Baroque are a group of young professional singers and instrumentalists at
-                                    the
-                                    start classical music careers.
-                                </td>
-                                <td>
-                                    <div>
-                                        <button data-toggle="modal" data-target="#myModal">
-                                            book online
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="<?php echo bloginfo('template_url'); ?>/img/album-2.jpg"
-                                         alt="art">
-                                </td>
-                                <td class="tac">
-                                    <div class="big-number">
-
-                                    </div>
-                                    <div class="month"></div>
-                                </td>
-                                <td class="line">
-                                    <div class="table-title">
-                                        concert
-                                    </div>
-                                    <div>
-                                        tattershall castle, lincs.<br>
-                                        19.00 - 22.00
-                                    </div>
-                                </td>
-                                <td class="text-even">
-                                    Eboracum Baroque are a group of young professional singers and instrumentalists at
-                                    the
-                                    start classical music careers.
-                                </td>
-                                <td>
-                                    <div>
-                                        <button data-toggle="modal" data-target="#myModal">
-                                            book online
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="<?php echo bloginfo('template_url'); ?>/img/album-1.jpg"
-                                         alt="art">
-                                </td>
-                                <td class="tac">
-                                    <div class="big-number">
-
-                                    </div>
-                                    <div class="month"></div>
-                                </td>
-                                <td class="line">
-                                    <div class="table-title">
-                                        if music be the food of love
-                                    </div>
-                                    <div>
-                                        st benet’s church, cambridge<br>
-                                        19.00 - 22.00
-                                    </div>
-                                </td>
-                                <td class="text-even">
-                                    Eboracum Baroque are a group of young professional singers and instrumentalists at
-                                    the
-                                    start classical music careers.
-                                </td>
-                                <td>
-                                    <div>
-                                        <button data-toggle="modal" data-target="#myModal">
-                                            book online
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
+                          
                         </table>
                     </div>
                 </div>
@@ -340,15 +145,17 @@ $event_id = get_the_ID();
                             <div class="modal-title">
                                 <?php echo get_the_title($event_id);?>
                             </div>
-
-                            <div class="modal-date"> <?php echo tribe_get_start_date($event_id, false, 'l, d F Y' )?><br>
+<?php if(!tribe_event_in_category("Support",$event_id)){?>
+                            <div class="modal-date"> 
+                               
+                               <?php echo tribe_get_start_date($event_id, false, 'l, d F Y' )?><br>
                                 <?php echo tribe_get_start_date($event_id, false, 'H.i ' ).tribe_get_end_date($event_id, false, '- H.i' );?>
                             </div>
 
                             <div class="modal-place"><?php echo sp_get_venue($event_id).",  ".tribe_get_address($event_id).", ".tribe_get_city($event_id);?><!-- Holy Trinity Church, Micklegate,<br>
                                 York, YO10 5CY -->
                             </div>
-
+<?php }?>
                             <div class="row ticket">
                                <?php echo do_shortcode("[ticket event='".$event_id."']");?>
 <!--                                <div class="col-xs-1"><input class="number-ticket-modal" type="text" placeholder="0">-->

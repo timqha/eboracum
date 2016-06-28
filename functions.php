@@ -153,16 +153,25 @@ function split_content() {
 }
 
 //function that load Past Events in index
-function EventsPost($year,$ms = null,$me = null){
+function EventsPost($year,$ms, $me){
 $posts = get_posts( array('post_type' => 'tribe_events') );
 //If Month start and mont end query typed
-    if($ms && $me){
-        $EventMonth = tribe_get_start_date( $post->ID, false, 'm' );
+    echo "<table  class='table-events'>";
         foreach($posts as $post){
-                 if(tribe_get_start_date( $post->ID, false, 'Y' )==$year){
-                      if(( $EventMonth >= $ms) && ($EventMonth <=$me)){
+             $EventMonth = tribe_get_start_date( $post->ID, false, 'm' );
+                 if((tribe_get_start_date( $post->ID, false, 'Y' )==$year) && ( $EventMonth >= $ms) && ($EventMonth <=$me)){
                           
-                          $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'>"."<div class='big-number'>".tribe_get_start_date( $post->ID, false, 'd' )."</div>"."<div class='month'>".tribe_get_start_date( $post->ID, false, 'F' )."</td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."<br>".tribe_get_start_date( $post->ID, false, 'H.i ' ).tribe_get_end_date( $post->ID, false, '- H.i' )."</div></td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
+                          $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>".
+                              "<td class='tac'>".
+                                "<div class='big-number'>".tribe_get_start_date( $post->ID, false, 'd' )."</div>".
+                                "<div class='month'>".tribe_get_start_date( $post->ID, false, 'F' )."</div>
+                            </td>". "
+                            <td class='line'>".
+                              "<div class='table-title'>".$post->post_title."</div>
+                              <div>".sp_get_venue($post->ID)."<br>".tribe_get_start_date( $post->ID, false, 'H.i ' ).tribe_get_end_date( $post->ID, false, '- H.i' )."</div>
+                              </td>".
+                              "<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>".
+                              "<td>
                                 <div>
                                         <a href=".$post->guid.">
                                  book online
@@ -172,51 +181,91 @@ $posts = get_posts( array('post_type' => 'tribe_events') );
                           
                      
                echo "<tr>".$output."</tr>";
-                     
-              }         
-                   
-                  
-                  }
-       
-            
+          
+                 }
         }
+    if(!$output){
+        echo "There is no content here";
     }
-             else{
-//If there only year typed                 
-                 foreach($posts as $post){
+    echo "</table>";
+}
+
+function EventsPosts($year){
+    $posts = get_posts( array('post_type' => 'tribe_events') );
+      foreach($posts as $post){
                  if(tribe_get_start_date( $post->ID, false, 'Y' )==$year){
                      $output = "<li class='past-events-ln'><div>".tribe_get_start_date( $post->ID, false, 'd.m' )."<a href=".$post->guid.">".$post->post_title."<i> ".sp_get_venue($post->ID)."</i>"."</a></div></li>";
                echo "<ul class='nav'>".$output."</ul>";
                      
               }         
                   }
-                  }
-//If there is no events to output
-   if(!$output){
-                         echo "There is no events for this year";
-                     }
+                  if(!$output){
+       echo "There is no content for this";
+   }
 }
 
 function EventsCat($cat){
     $posts = get_posts( array('post_type' => 'tribe_events') );
     foreach($posts as $post){
                  if(tribe_event_in_category($cat,$post->ID)){
-                          
-                          $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'>"."<div class='big-number'>".tribe_get_start_date( $post->ID, false, 'd' )."</div>"."<div class='month'>".tribe_get_start_date( $post->ID, false, 'F' )."</td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."<br>".tribe_get_start_date( $post->ID, false, 'H.i ' ).tribe_get_end_date( $post->ID, false, '- H.i' )."</div></td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
+                     if($cat=="Support"){
+         foreach($posts as $post){
+                 if(tribe_event_in_category($cat,$post->ID)){
+                          $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'>"."</td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."</td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
                                 <div>
                                         <a href=".$post->guid.">
                                  book online
                                 </a>
                                 </div>
                             </td>";
-                          
-                     
                echo "<tr>".$output."</tr>";
                      
               }
+       
                   }
-     if(!$output){
-            echo "There is no posts yet";
-        }
+    }
+                     else{
+                          $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'>"."<div class='big-number'>".tribe_get_start_date( $post->ID, false, 'd' )."</div>"."<div class='month'>".tribe_get_start_date( $post->ID, false, 'F' )."</div></td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."<br>".tribe_get_start_date( $post->ID, false, 'H.i ' ).tribe_get_end_date( $post->ID, false, '- H.i' )."</div></td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
+                                <div>
+                                        <a href=".$post->guid.">
+                                 book online
+                                </a>
+                                </div>
+                            </td>";
+               echo "<tr>".$output."</tr>";
+                     
+              }}
+       
+                  }
+    
 }
+
+function TableEventsIndex(){
+    $date = date('m');
+    $posts = get_posts( array('post_type' => 'tribe_events') );
+        if(($date>="1") && ($date<"4")){
+    $ms="01";
+    $me="04";
+    }
+       if(($date>="4") && ($date<"8")){
+    $ms="04";
+    $me="09";
+    }
+          if(($date>="8") && ($date<"12")){
+    $ms="8";
+    $me="13";
+    }
+     foreach($posts as $post){
+          $EventMonth = tribe_get_start_date( $post->ID, false, 'm' );
+         if(( $EventMonth >= $ms) && ($EventMonth <$me) && (tribe_get_start_date( $post->ID, false, 'Y' )==date('Y'))){
+           $output = "<td class='tac'>"."<div class='big-number'>".tribe_get_start_date( $post->ID, false, 'd' )."</div>"."<div class='month'>".tribe_get_start_date( $post->ID, false, 'F' )."</div></td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."<br>".tribe_get_start_date( $post->ID, false, 'H.i ' ).tribe_get_end_date( $post->ID, false, '- H.i' )."</div></td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
+                            </td>";
+                          
+                     
+               echo "<tr>".$output."</tr>";
+       
+            
+        }}
+}
+   
 ?>

@@ -141,7 +141,7 @@ table.table-events {
 }
 
 .tb-events-scroll {
-    
+    overflow-y: scroll;
     max-height: 281px;
 }
 

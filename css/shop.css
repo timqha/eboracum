@@ -70,6 +70,7 @@
 
 .ticket-section .tb-events-scroll {
     max-height: 367px;
+    overflow-y: initial;
 }
 
 /* modal */
@@ -202,7 +203,9 @@ button.close.my-modal-close {
     min-width: 25px;
     height: 25px;
 }
-
+.ticket .ticket-orders fieldset input[type="checkbox"]{
+    height: auto;
+}
 .ticket {
     padding-bottom: 10px;
 }
@@ -543,12 +546,12 @@ button.close.my-modal-close {
 }
 
 .tb-events-scroll-success {
-    overflow-y: scroll;
+    overflow-y: initial;
     height: 435px;
 }
 
 .tb-events-scroll-checkout {
-    overflow-y: scroll;
+    overflow-y: initial;
     height: 465px;
 }
 
