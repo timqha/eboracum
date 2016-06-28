@@ -111,21 +111,21 @@ $event_id = get_the_ID();
                 </ul>
                 <div class="row">
                     <div class="col-lg-12 tb-events-scroll tab-content">
-                        <table id="tickets" class="tab-pane fade in active table-events">
+                        <div id="tickets" class="tab-pane fade in active">
                            <?php EventsCat("Tickets");?>
-                        </table>
+                        </div>
 
-                        <table id="music" class="tab-pane fade table-events">
+                        <div id="music" class="tab-pane fade">
                            <?php EventsCat("Music");?>
-                        </table>
+                        </div>
 
-                        <table id="support_us" class="tab-pane fade table-events">
-                           <?php EventsCat("Support");?>
-                        </table>
+                        <div id="support_us" class="tab-pane fade">
+                          <?php EventsCat("support");?>
+                        </div>
 
-                        <table id="other" class="tab-pane fade table-events">
+                        <div id="other" class="tab-pane fade ">
                           
-                        </table>
+                        </div>
                     </div>
                 </div>
             </div>
