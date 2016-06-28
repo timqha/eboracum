@@ -258,6 +258,7 @@ button.close.my-modal-close {
     color: #9e9e9e;
     text-transform: uppercase;
     font-size: 15.03pt;
+    margin-bottom: 65px;
 }
 
 .table-events td.gg {
@@ -397,6 +398,58 @@ button.close.my-modal-close {
     border-radius: 3px;
     white-space: nowrap;
     margin-left: 15px;
+}
+
+.single .mt_cart form>p>label{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-size: 12pt;
+    color: #8c8380;
+}
+
+.single .mt_cart form>p>input {
+    font-family: "Open Sans", sans-serif;
+    font-size: 7.67pt;
+    color: #9e9e9e;
+    text-transform: uppercase;
+    padding: 9px 13px;
+    position: relative;
+    margin-left: 50%;
+    width: 30%;
+    left: -15%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.single .ticket-type-message{
+    font-size:  10pt;
+    color: #939393;
+    float: right;
+}
+
+.single .mt_cart .mt_submit input{
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.794635em;
+    background-color: #303056;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    min-width: 100px;
+    min-height: 32px;
+    padding: 0 15px;
+    clear: both;
+    float: right;
+    width: 20%;
+}
+
+.single .mt_cart p:last-child a{
+    clear: both;
+    display: block;
 }
 
 .CHECKOUT-section select:active,
