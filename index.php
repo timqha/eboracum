@@ -119,9 +119,9 @@
                 </div>
                 <div class="col-md-4 bad-col-lg-4">
 
-                    <table class="table-striped table-content">
+                    <div class="table-wrap">
                        <?php TableEventsIndex();?>
-                    </table>
+                    </div>
 
                 </div>
             </div>

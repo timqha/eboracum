@@ -209,8 +209,6 @@ function EventsCat($cat){
     foreach($posts as $post){
                  if(tribe_event_in_category($cat,$post->ID)){
                      if($cat=="Support"){
-         foreach($posts as $post){
-                 if(tribe_event_in_category($cat,$post->ID)){
                           $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'>"."</td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."</td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
                                 <div>
                                         <a href=".$post->guid.">
@@ -219,10 +217,6 @@ function EventsCat($cat){
                                 </div>
                             </td>";
                echo "<tr>".$output."</tr>";
-                     
-              }
-       
-                  }
     }
                      else{
                           $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'>"."<div class='big-number'>".tribe_get_start_date( $post->ID, false, 'd' )."</div>"."<div class='month'>".tribe_get_start_date( $post->ID, false, 'F' )."</div></td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."<br>".tribe_get_start_date( $post->ID, false, 'H.i ' ).tribe_get_end_date( $post->ID, false, '- H.i' )."</div></td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
@@ -255,9 +249,10 @@ function TableEventsIndex(){
     $ms="8";
     $me="13";
     }
+    echo "<table class='table-striped table-content'>";
      foreach($posts as $post){
           $EventMonth = tribe_get_start_date( $post->ID, false, 'm' );
-         if(( $EventMonth >= $ms) && ($EventMonth <$me) && (tribe_get_start_date( $post->ID, false, 'Y' )==date('Y'))){
+         if(( $EventMonth >= $ms) && ($EventMonth < $me) && (tribe_get_start_date( $post->ID, false, 'Y' )==date('Y'))){
            $output = "<td class='tac'>"."<div class='big-number'>".tribe_get_start_date( $post->ID, false, 'd' )."</div>"."<div class='month'>".tribe_get_start_date( $post->ID, false, 'F' )."</div></td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."<br>".tribe_get_start_date( $post->ID, false, 'H.i ' ).tribe_get_end_date( $post->ID, false, '- H.i' )."</div></td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
                             </td>";
                           
@@ -266,6 +261,7 @@ function TableEventsIndex(){
        
             
         }}
+    echo "</table>";
 }
    
 ?>

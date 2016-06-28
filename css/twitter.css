@@ -16,7 +16,7 @@ p.tweet {
     font-size: 18pt;
     font-style: italic;
     height: 236px;
-    overflow-y: scroll;
+    overflow-y: initial;
 }
 
 .footer-twitter{

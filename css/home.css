@@ -268,7 +268,11 @@ table.table-events {
 }
 
 /*events*/
-
+.table-wrap{
+    max-height: 238px;
+    overflow: hidden;
+    overflow-y: initial;
+}
 /* past events */
 
 .past-events-text {
