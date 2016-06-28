@@ -44,7 +44,8 @@ $event_id = get_the_ID();
     <img src="<?php echo bloginfo('template_url'); ?>/img/basket.png" alt="bucket">
     <div><a href="#">9</a></div>
 </div>
-<section class="container content-text">
+<div class="row">
+    <section class="container content-text">
     <div class="col-lg-12">
         <div class="row">
             <div class="col-lg-12">
@@ -97,6 +98,7 @@ $event_id = get_the_ID();
             </div>
         </div>
 </section>
+</div>
 <section class=" content-text ticket-section">
     <div class="container-fluid">
         <div class="row">
