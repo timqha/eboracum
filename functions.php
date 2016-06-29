@@ -205,9 +205,11 @@ function EventsPosts($year){
 }
 
 function EventsCat($cat){
-    $posts = get_posts( array('post_type' => 'tribe_events') );
+    $posts = get_posts( array('post_type' => 'tribe_events',
+                             'posts_per_page'=>'100'));
+    echo "<table class='table-events'>";
     foreach($posts as $post){
-                 if((tribe_event_in_category($cat,$post->ID)) && (tribe_get_end_date( $post->ID, false, 'Ymd' ) >= date('Ymd'))){
+                 if((tribe_event_in_category($cat,$post->ID)) && (tribe_get_end_date( $post->ID, false, 'Ymd' ) > date('Ymd'))){
                      if(!tribe_event_in_category("Music",$post->ID)){
                          $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'>"."<div class='big-number'>".tribe_get_start_date( $post->ID, false, 'd' )."</div>"."<div class='month'>".tribe_get_start_date( $post->ID, false, 'F' )."</div></td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."<br>".tribe_get_start_date( $post->ID, false, 'H.i ' ).tribe_get_end_date( $post->ID, false, '- H.i' )."</div></td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
                                 <div>
@@ -219,7 +221,7 @@ function EventsCat($cat){
                echo "<tr>".$output."</tr>";
                      }
                         if((tribe_event_in_category("Music",$post->ID))){
-                            $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'></td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."</div></td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
+                            $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'>"."</td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."</td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
                                 <div>
                                         <a href=".$post->guid.">
                                  book online
@@ -227,12 +229,12 @@ function EventsCat($cat){
                                 </div>
                             </td>";
                echo "<tr>".$output."</tr>";
-                        }  
+                        }
                      
               }
        
                   }
-    
+    echo "</table>";
 }
 function EventsCatSup(){
     $posts = get_posts( array('post_type' => 'tribe_events',
