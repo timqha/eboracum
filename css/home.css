@@ -322,6 +322,11 @@ table.table-events {
 }
 
 /* contact us */
+
+.contact-us .input-form input {
+    padding: 9px 13px;
+}
+
 .contact-us .color-blue {
     /*padding-left: 30px;*/
     background-color: #292b41;
@@ -333,7 +338,15 @@ table.table-events {
     color: #a79b93;
 }
 
-.input-form-submit {
+.contact-us .input-form input, .contact-us .input-form textarea {
+    font-family: "Open Sans", sans-serif;
+    font-size: 7.67pt;
+    color: #9e9e9e;
+    text-transform: none;
+    margin-bottom: 10px;
+}
+
+.input-form-submit, .cntctfrm_contact_form input.cntctfrm_contact_submit {
     font-family: "Crimson Text", serif;
     font-weight: 600;
     font-size: 9.5pt;
@@ -342,23 +355,13 @@ table.table-events {
     color: #ffffff;
     background-color: #a79b93;
     min-height: 25px;
-    text-transform: uppercase;
+    text-transform: none;
     padding: 6px 10px;
     line-height: 9.5pt;
     padding-top: 10px;
 }
 
-.contact-us .input-form input, .contact-us .input-form textarea {
-    font-family: "Open Sans", sans-serif;
-    font-size: 7.67pt;
-    color: #9e9e9e;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
 
-.contact-us .input-form input {
-    padding: 9px 13px;
-}
 
 .contact-us .input-form textarea {
     width: 100%;
@@ -420,6 +423,12 @@ table.table-events {
     font-weight: 400;
     font-size: 18px;
 }
+
+.contact-us .cntctfrm_field_wrap {
+    margin: 0 0 10px;
+}
+
+
 
 /* contact us */
 

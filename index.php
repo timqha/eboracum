@@ -524,11 +524,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="col-sm-6 input-form">
-                                    <input class="imgw" type="text" placeholder="* your name">
-                                    <input class="imgw" type="text" placeholder="* your e-mail">
-                                    <textarea name="message" cols="60" rows="10"
-                                              placeholder="* your message here"></textarea>
-                                    <button class="input-form-submit">submit</button>
+                                    <?php echo do_shortcode('[bestwebsoft_contact_form]'); ?>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="contact-text-form">
