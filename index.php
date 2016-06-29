@@ -533,7 +533,7 @@
                                         from Eboracum Baroque:
                                     </div>
                                     <div class="btn-padding-contact-us">
-                                        <button class="input-form-submit">join mailing list</button>
+                                        <button onclick="myFunction()" class="input-form-submit" data-toggle="modal" data-target="#form-join">join mailing list</button>
                                     </div>
                                     <!--  buttons twitter facebook -->
                                     <div class="row">
@@ -579,6 +579,25 @@
         </div>
 
     </section>
+
+    <!-- Modal -->
+    <div id="form-join" class="modal fade" role="dialog">
+        <div class="modal-dialog my-modal-dialog-size">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close my-modal-close" data-dismiss="modal">&times;</button>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <iframe style="background: #292b41;" width="830" height="438" src="http://eboracumbaroque.us6.list-manage.com/subscribe?u=802cb6dded8614889af381dc4&id=a02fee952a"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/twitter.js"></script>
 <?php get_footer(); ?>
