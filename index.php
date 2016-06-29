@@ -109,13 +109,20 @@
 
                 </div>
                 <div class="col-md-4">
+                   
                     <figure>
-                        <img class="imgw"
-                             src="<?php echo bloginfo('template_url'); ?>/img/blog-post-1.jpg"
-                             alt="art">
-                        <figcaption>Order a copy of our new CD <a class="text-deco" href="#">here</a>!</figcaption>
+                           <div class="imgwindex">
+                               <?php 
+                       $eventPost = get_posts( array('post_type' => 'tribe_events',
+                             'posts_per_page'=>'1') );
+                    if(tribe_event_in_category("New CD",$eventPost[0]->ID)){
+                        echo get_the_post_thumbnail($eventPost[0]->ID);
+                    
+                        ?>
+                           </div>  
+                        <figcaption>Order a copy of our new CD <a class="text-deco" href="<?php echo $eventPost[0]->guid ?>">here</a>!</figcaption>
                     </figure>
-
+<?php }?>
                 </div>
                 <div class="col-md-4 bad-col-lg-4">
 

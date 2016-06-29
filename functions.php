@@ -212,7 +212,8 @@ function EventsCat($cat){
     echo "<table class='table-events'>";
     foreach($posts as $post){
                  if((tribe_event_in_category($cat,$post->ID)) && (tribe_get_end_date( $post->ID, false, 'Ymd' ) >= date('Ymd'))){
-                          $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'>"."<div class='big-number'>".tribe_get_start_date( $post->ID, false, 'd' )."</div>"."<div class='month'>".tribe_get_start_date( $post->ID, false, 'F' )."</div></td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."<br>".tribe_get_start_date( $post->ID, false, 'H.i ' ).tribe_get_end_date( $post->ID, false, '- H.i' )."</div></td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
+                     if(!tribe_event_in_category("Music",$post->ID)){
+                         $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'>"."<div class='big-number'>".tribe_get_start_date( $post->ID, false, 'd' )."</div>"."<div class='month'>".tribe_get_start_date( $post->ID, false, 'F' )."</div></td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."<br>".tribe_get_start_date( $post->ID, false, 'H.i ' ).tribe_get_end_date( $post->ID, false, '- H.i' )."</div></td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
                                 <div>
                                         <a href=".$post->guid.">
                                  book online
@@ -220,6 +221,17 @@ function EventsCat($cat){
                                 </div>
                             </td>";
                echo "<tr>".$output."</tr>";
+                     }
+                        if((tribe_event_in_category("Music",$post->ID))){
+                            $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'></td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."</div></td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
+                                <div>
+                                        <a href=".$post->guid.">
+                                 book online
+                                </a>
+                                </div>
+                            </td>";
+               echo "<tr>".$output."</tr>";
+                        }  
                      
               }
        

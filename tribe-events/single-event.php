@@ -69,7 +69,7 @@ $event_id = get_the_ID();
                 <div class="title"><?php echo  get_the_title($event_id);?></div>
                 <div class="text">
                 <?php the_content();?>
-              <?php if(tribe_event_in_category("New CD")){
+              <?php if(tribe_event_in_category("New CD",$event_id)){
     ?>
                        </div>
                      <div class="col-xs-7">
@@ -149,7 +149,7 @@ $event_id = get_the_ID();
                             <div class="modal-title">
                                 <?php echo get_the_title($event_id);?>
                             </div>
-<?php if(!tribe_event_in_category("Support",$event_id)){?>
+<?php if((!tribe_event_in_category("Support",$event_id))&&(!tribe_event_in_category("New CD",$event_id))){?>
                             <div class="modal-date"> 
                                
                                <?php echo tribe_get_start_date($event_id, false, 'l, d F Y' )?><br>
@@ -159,7 +159,7 @@ $event_id = get_the_ID();
                             <div class="modal-place"><?php echo sp_get_venue($event_id).",  ".tribe_get_address($event_id).", ".tribe_get_city($event_id);?><!-- Holy Trinity Church, Micklegate,<br>
                                 York, YO10 5CY -->
                             </div>
-<?php }?>
+<?php }?> 
                             <div class="row ticket">
                                <?php echo do_shortcode("[ticket event='".$event_id."']");?>
 <!--                                <div class="col-xs-1"><input class="number-ticket-modal" type="text" placeholder="0">-->
