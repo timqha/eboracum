@@ -154,8 +154,7 @@ function split_content() {
 
 //function that load Past Events in index
 function EventsPost($year,$ms, $me){
- $posts = get_posts( array('post_type' => 'tribe_events',
-                             'posts_per_page'=>'100') );
+$posts = get_posts( array('post_type' => 'tribe_events') );
 //If Month start and mont end query typed
     echo "<table  class='table-events'>";
         foreach($posts as $post){
@@ -192,8 +191,7 @@ function EventsPost($year,$ms, $me){
 }
 
 function EventsPosts($year){
-    $posts = get_posts( array('post_type' => 'tribe_events',
-                             'posts_per_page'=>'100') );
+    $posts = get_posts( array('post_type' => 'tribe_events') );
       foreach($posts as $post){
                  if(tribe_get_start_date( $post->ID, false, 'Y' )==$year){
                      $output = "<li class='past-events-ln'><div>".tribe_get_start_date( $post->ID, false, 'd.m' )."<a href=".$post->guid.">".$post->post_title."<i> ".sp_get_venue($post->ID)."</i>"."</a></div></li>";
@@ -207,9 +205,7 @@ function EventsPosts($year){
 }
 
 function EventsCat($cat){
-    $posts = get_posts( array('post_type' => 'tribe_events',
-                             'posts_per_page'=>'100') );
-    echo "<table class='table-events'>";
+    $posts = get_posts( array('post_type' => 'tribe_events') );
     foreach($posts as $post){
                  if((tribe_event_in_category($cat,$post->ID)) && (tribe_get_end_date( $post->ID, false, 'Ymd' ) >= date('Ymd'))){
                      if(!tribe_event_in_category("Music",$post->ID)){
@@ -236,7 +232,6 @@ function EventsCat($cat){
               }
        
                   }
-    echo "</table>";
     
 }
 function EventsCatSup(){
