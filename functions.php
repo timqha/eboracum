@@ -211,18 +211,7 @@ function EventsCat($cat){
                              'posts_per_page'=>'100') );
     echo "<table class='table-events'>";
     foreach($posts as $post){
-                 if(tribe_event_in_category($cat,$post->ID)){
-                     if($cat=="Support"){
-                          $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'>"."</td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."</td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
-                                <div>
-                                        <a href=".$post->guid.">
-                                 book online
-                                </a>
-                                </div>
-                            </td>";
-               echo "<tr>".$output."</tr>";
-    }
-                     else{
+                 if((tribe_event_in_category($cat,$post->ID)) && (tribe_get_end_date( $post->ID, false, 'Ymd' ) >= date('Ymd'))){
                           $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'>"."<div class='big-number'>".tribe_get_start_date( $post->ID, false, 'd' )."</div>"."<div class='month'>".tribe_get_start_date( $post->ID, false, 'F' )."</div></td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."<br>".tribe_get_start_date( $post->ID, false, 'H.i ' ).tribe_get_end_date( $post->ID, false, '- H.i' )."</div></td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
                                 <div>
                                         <a href=".$post->guid.">
@@ -232,13 +221,34 @@ function EventsCat($cat){
                             </td>";
                echo "<tr>".$output."</tr>";
                      
-              }}
+              }
        
                   }
     echo "</table>";
     
 }
-
+function EventsCatSup(){
+    $posts = get_posts( array('post_type' => 'tribe_events',
+                             'posts_per_page'=>'100') );
+    echo "<table class='table-events'>";
+    foreach($posts as $post){
+                 if((tribe_event_in_category("Support",$post->ID))){
+                          $output = "<td>".get_the_post_thumbnail( $post->ID)."</td>"."<td class='tac'>"."</td>". "<td class='line'>"."<div class='table-title'>".$post->post_title."</div><div>".sp_get_venue($post->ID)."</td>"."<td class='text-event'>".tribe_events_get_the_excerpt($post->ID)."</td>"."<td>
+                                <div>
+                                        <a href=".$post->guid.">
+                                 book online
+                                </a>
+                                </div>
+                            </td>";
+               echo "<tr>".$output."</tr>";
+                     
+              }
+       
+                  }
+    echo "</table>";
+    
+}
+ 
 function TableEventsIndex(){
     $date = date('m');
     $posts = get_posts( array('post_type' => 'tribe_events') );

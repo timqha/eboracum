@@ -284,26 +284,6 @@
 
                     <div id="t17M" class="tab-pane fade">
                          <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
-                         <?php EventsPost("2017","04","08");?>
                     </div>
 
                     <div id="t17S" class="tab-pane fade">

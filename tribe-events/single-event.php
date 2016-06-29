@@ -69,22 +69,9 @@ $event_id = get_the_ID();
                 <div class="title"><?php echo  get_the_title($event_id);?></div>
                 <div class="text">
                 <?php the_content();?>
-              <?php if(!tribe_event_in_category("Music")){
-                        if(!tribe_event_in_category("Support",$event_id)){
-                    echo "<h4>Details</h4><br>Date:<i> ".tribe_get_start_date($event_id, false, 'm.d' )."</i><br>";?>
-                <?php echo "Time: <i>".tribe_get_start_date($event_id, false, 'H.i ' ).tribe_get_end_date($event_id, false, '- H.i' )."<br></i>Place: <i>".tribe_get_address($event_id)." ".tribe_get_city($event_id)."</i>";
-                        }?>
-                </div>
-                <div class="col-xs-offset-9 col-xs-3">
-                    <button data-toggle="modal" data-target="#myModal" class="button-my-blue">
-                        book online
-                    </button>
-                </div>
-                
-                 <?php }
-                   else {
-                    ?>
-                    </div>
+              <?php if(tribe_event_in_category("New CD")){
+    ?>
+                       </div>
                      <div class="col-xs-7">
                     <img class="imgw" src="<?php echo bloginfo('template_url'); ?>/img/our-new-CD.png"
                          alt="art">
@@ -92,6 +79,21 @@ $event_id = get_the_ID();
                      <div class="col-xs-offset-2 col-xs-3">
                     <button data-toggle="modal" data-target="#myModal" class="button-my-blue">
                         buy online
+                    </button>
+                </div>
+                
+                 <?php }
+                   else {
+                    ?>
+                     <?php
+                        if(!tribe_event_in_category("Support",$event_id)){
+                    echo "<h4>Details</h4><br>Date:<i> ".tribe_get_start_date($event_id, false, 'm.d' )."</i><br>";?>
+                <?php echo "Time: <i>".tribe_get_start_date($event_id, false, 'H.i ' ).tribe_get_end_date($event_id, false, '- H.i' )."<br></i>Place: <i>".tribe_get_address($event_id)." ".tribe_get_city($event_id)."</i>";
+                        }?>
+                    </div>
+                <div class="col-xs-offset-9 col-xs-3">
+                    <button data-toggle="modal" data-target="#myModal" class="button-my-blue">
+                        Buy online
                     </button>
                 </div>
                     <?php }?>
@@ -120,7 +122,7 @@ $event_id = get_the_ID();
                         </div>
 
                         <div id="support_us" class="tab-pane fade">
-                          <?php EventsCat("support");?>
+                          <?php EventsCatSup();?>
                         </div>
 
                         <div id="other" class="tab-pane fade ">
