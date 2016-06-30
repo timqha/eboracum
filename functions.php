@@ -13,7 +13,6 @@ function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
-//Вывод первой картинки с поста
 function first_post_image() {
   global $post, $posts;
   $first_img = '';
@@ -23,7 +22,6 @@ function first_post_image() {
   $first_img = $matches [1] [0];
   if(empty($first_img)){
    $first_img = "/wp-content/themes/ebracum/img/noimages.jpg";
-// укажите путь к изображению, которое будет выводится по умолчанию. 
   }
  else return '<img src="'.$first_img.'">';
 }
@@ -38,12 +36,10 @@ register_nav_menus(array(
     'bottom' => 'Нижнее меню'));
 
 function sh_collapse($atts, $content = null) {
-// переменные которые приходят
 extract(shortcode_atts(array(
-"title" => 'Title', // значение заголовка по умолчанию
+"title" => 'Title', 
 "id" => 1
 ), $atts));
-// выводим hrml с переменными полученными из шорткода
 return '<a class="collapsed" type="button" data-toggle="collapse" data-target="#collapseExample'.$id.'" aria-expanded="false" aria-controls="collapseExample'.$id.'">
 ' . $title . '
 </a>
@@ -56,11 +52,8 @@ return '<a class="collapsed" type="button" data-toggle="collapse" data-target="#
 add_shortcode('collapse', 'sh_collapse');
 
 
-/*КОПКИ РЕДАКТОРА*/
-// Добавляем кнопки в текстовый html-редактор
 add_action( 'admin_print_footer_scripts', 'add_sheensay_quicktags' );
 function add_sheensay_quicktags() {
-        //Проверка, определен ли в wordpress скрипт quicktags
     if (wp_script_is('quicktags')) :
 ?>
     <script type="text/javascript">
@@ -139,7 +132,6 @@ function show_image_post(){
 }
 
 
-// разбиваем контент тегом more и возвращаем в виде массива
 function split_content() {
  
     global $more;
