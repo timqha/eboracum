@@ -23,7 +23,10 @@
 
 .basket div a {
     font-size: 10pt;
+    display: block;
     color: #a79b93;
+    height: 27px;
+    width: 27px;
 }
 
 .shop-1-bgc {

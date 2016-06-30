@@ -42,7 +42,7 @@ $event_id = get_the_ID();
 	<!-- SHOP -->
 <div class="basket">
     <img src="<?php echo bloginfo('template_url'); ?>/img/basket.png" alt="bucket">
-    <div><a href="#">9</a></div>
+    <div><a href="<?php echo bloginfo('template_url'); ?>/purchase/"></a></div>
 </div>
 <div class="row">
     <section class="container content-text">
@@ -118,7 +118,7 @@ $event_id = get_the_ID();
                         </div>
 
                         <div id="music" class="tab-pane fade">
-                           <?php EventsCat("Music");?>
+                           <?php EventsCatMusic();?>
                         </div>
 
                         <div id="support_us" class="tab-pane fade">
@@ -149,7 +149,7 @@ $event_id = get_the_ID();
                             <div class="modal-title">
                                 <?php echo get_the_title($event_id);?>
                             </div>
-<?php if((!tribe_event_in_category("Support",$event_id))&&(!tribe_event_in_category("New CD",$event_id))){?>
+<?php if((!tribe_event_in_category("Support",$event_id))&&(!tribe_event_in_category("New CD",$event_id))&&((!tribe_event_in_category("Music",$event_id)))){?>
                             <div class="modal-date"> 
                                
                                <?php echo tribe_get_start_date($event_id, false, 'l, d F Y' )?><br>

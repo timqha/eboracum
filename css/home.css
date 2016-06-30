@@ -101,6 +101,20 @@ figcaption {
     padding: 0 0 0 30px;
 }
 
+.amazingslider-text-box-1{
+    
+    display:block!important;
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    margin-right:0;
+    
+}
+
+.amazingslider-description-1{
+   color: #a7a39a;
+    
+}
 /* the guard */
 
 .center-title {
