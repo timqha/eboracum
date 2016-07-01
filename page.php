@@ -9,7 +9,9 @@ get_header("custom2");
         <div class="col-lg-12">
             <?php if( have_posts() ){ while( have_posts() ){ the_post(); ?>
                  <?php
-          
+          if((is_page("purchase"))){
+             the_content(); 
+          }
 $content = split_content();
  
 ?>
