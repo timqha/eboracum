@@ -113,16 +113,18 @@
                     <figure>
                            <div class="imgwindex">
                                <?php 
-                       $eventPost = get_posts( array('post_type' => 'tribe_events',
-                             'posts_per_page'=>'1') );
-                    if(tribe_event_in_category("New CD",$eventPost[0]->ID)){
-                        echo get_the_post_thumbnail($eventPost[0]->ID);
-                    
-                        ?>
-                           </div>  
-                        <figcaption>Order a copy of our new CD <a class="text-deco" href="<?php echo $eventPost[0]->guid ?>">here</a>!</figcaption>
-                    </figure>
-<?php }?>
+                       $eventPosts = get_posts( array('post_type' => 'tribe_events',
+                             'posts_per_page'=>'50') );
+                               $count =0;
+                               foreach($eventPosts as $ep){
+                                   if((tribe_event_in_category("New CD",$ep->ID)) && ($count <= 1)){
+                                       $count = $count +1;
+                                       echo get_the_post_thumbnail($ep->ID)."</div>  
+                        <figcaption>Order a copy of our new CD <a class='text-deco' href='$ep->guid '>here</a>!</figcaption>
+                    </figure>";
+                                   }
+                               }
+                               ?>
                 </div>
                 <div class="col-md-4 bad-col-lg-4">
 
@@ -196,6 +198,7 @@
                             <img class="logo-head-2" src="<?php echo bloginfo('template_url'); ?>/img/stylich.png"
                                  alt="Stylish Choral singing">
                         </div>
+                        
                         <div class="col-xs-12">
                             <div class="sect-the-guard">the guardian</div>
                         </div>
@@ -203,7 +206,7 @@
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="title-news">LATEST NEWS</div>
-                    <img class="imgw" src="<?php echo bloginfo('template_url'); ?>/img/blog-post-2+.jpg" alt="people">
+                    <a href="<?php echo get_home_url(); ?>/category/our_news/"><img class="imgw" src="<?php echo bloginfo('template_url'); ?>/img/blog-post-2+.jpg" alt="people"></a>
                     <div class="text-guardian">Eboracum Baroque are a group of young professional singers and
                         instrumentalists at the
                         start classical music the
@@ -211,8 +214,8 @@
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="title-news">REVIEWS</div>
-                    <img class="imgw" src="<?php echo bloginfo('template_url'); ?>/img/THOMAS-TUDWAY-3.jpg"
-                         alt="thomas">
+                    <a href="<?php echo get_home_url(); ?>/category/reviews/"><img class="imgw" src="<?php echo bloginfo('template_url'); ?>/img/THOMAS-TUDWAY-3.jpg"
+                                                                                   alt="thomas"></a>
                     <div class="text-guardian">Eboracum Baroque are a group of young professional singers and
                         instrumentalists at the
                         start classical music the
@@ -220,16 +223,17 @@
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="title-news">BAROCKS!</div>
-                    <img class="imgw" src="<?php echo bloginfo('template_url'); ?>/img/education-2.jpg" alt="education">
+                    <a href="<?php echo get_home_url(); ?>/barocks/"><img class="imgw" src="<?php echo bloginfo('template_url'); ?>/img/education-2.jpg" alt="education"></a>
                     <div class="text-guardian">Eboracum Baroque are a group of young professional singers and
                         instrumentalists at the
                         start classical music the
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
-                    <div class="title-news">THOMAS TUDWAY PROJECT</div>
-                    <img class="imgw" src="<?php echo bloginfo('template_url'); ?>/img/THOMAS-TUDWAY-1.jpg"
-                         alt="thomas">
+                    <div class="title-news">THOMAS TUDWAY PROJECT
+                    </div>
+                    <a href="<?php echo get_home_url(); ?>/thomas-tudway-project/"><img class="imgw" src="<?php echo bloginfo('template_url'); ?>/img/THOMAS-TUDWAY-1.jpg"
+                                                                                        alt="thomas"></a>
                     <div class="text-guardian">Eboracum Baroque are a group of young professional singers and
                         instrumentalists at the
                         start classical music the
