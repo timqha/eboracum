@@ -259,41 +259,89 @@
                         <div class="col-sm-12 col-xs-6">
                             <ul class="filter">
                                 <li><div class="events-year">2016</div></li>
-                                <li class="active"><a data-toggle="tab" href="#t16j">JAN - APR</a></li>
-                                <li><a data-toggle="tab" href="#t16M">MAY - AUG</a></li>
-                                <li><a data-toggle="tab" href="#t16S">SEP - DEC</a></li>
+                                <li <?php 
+                                          if((date("Y")== "2016") && (date("m")>="1") && (date("m")<"4")){
+    echo "class='active in'";
+    }
+                                          ?>><a data-toggle="tab" href="#t16j">JAN - APR</a></li>
+                                <li <?php 
+                                          if((date("Y")== "2016") && (date("m")>="4") && (date("m")<"8")){
+    echo "class='active in'";
+    }
+                                          ?>><a data-toggle="tab" href="#t16M">MAY - AUG</a></li>
+                                <li <?php 
+                                          if((date("Y")== "2016") && (date("m")>="8") && (date("m")<="12")){
+    echo "class='active in'";
+    }
+                                          ?>><a data-toggle="tab" href="#t16S">SEP - DEC</a></li>
                                 <li><div class="events-year">2017</div></li>
-                                <li><a data-toggle="tab" href="#t17j">JAN - APR</a></li>
-                                <li><a data-toggle="tab" href="#t17M">MAY - AUG</a></li>
-                                <li><a data-toggle="tab" href="#t17S">SEP - DEC</a></li>
+                                <li <?php 
+                                          if((date("Y")== "2017") && (date("m")>="1") && (date("m")<"4")){
+    echo "class='active in'";
+    }
+                                          ?>><a data-toggle="tab" href="#t17j">JAN - APR</a></li>
+                                <li <?php 
+                                          if((date("Y")== "2017") && (date("m")>="4") && (date("m")<"8")){
+    echo "class='active in'";
+    }
+                                          ?>><a data-toggle="tab" href="#t17M">MAY - AUG</a></li>
+                                <li <?php 
+                                          if((date("Y")== "2017") && (date("m")>="8") && (date("m")<="12")){
+    echo "class='active in'";
+    }
+                                          ?>><a data-toggle="tab" href="#t17S">SEP - DEC</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-9 tb-events-scroll tab-content">
                    
-                    <div id="t16j" class="tab-pane fade active in">
+                    <div id="t16j" class="tab-pane fade <?php 
+                                          if((date("Y")== "2016") && (date("m")>="1") && (date("m")<"4")){
+    echo "active in";
+    }
+                                          ?>">
                        <?php EventsPost("2016","01","04");?>
                     </div>
 
-                    <div id="t16M" class="tab-pane fade">
+                    <div id="t16M" class="tab-pane fade  <?php 
+                                          if((date("Y")== "2016") && (date("m")>="4") && (date("m")<"8")){
+    echo "active in";
+    }
+                                          ?>">
                     <?php EventsPost("2016","04","08");?>
                     </div>
 
-                    <div id="t16S" class="tab-pane fade">
+                    <div id="t16S" class="tab-pane fade  <?php 
+                                          if((date("Y")== "2016") && (date("m")>="8") && (date("m")<="12")){
+    echo "active in";
+    }
+                                          ?>">
                        <?php EventsPost("2016","08","12");?>
                     </div>
 
 
-                    <div id="t17j" class="tab-pane fade">
+                    <div id="t17j" class="tab-pane fade  <?php 
+                                          if((date("Y")== "2017") && (date("m")>="1") && (date("m")<"4")){
+    echo "active in";
+    }
+                                          ?>">
                         <?php EventsPost("2017","01","04");?>
                     </div>
 
-                    <div id="t17M" class="tab-pane fade">
+                    <div id="t17M" class="tab-pane fade <?php 
+                                          if((date("Y")== "2017") && (date("m")>="4") && (date("m")<"8")){
+    echo "active in";
+    }
+                                          ?>">
                          <?php EventsPost("2017","04","08");?>
                     </div>
 
-                    <div id="t17S" class="tab-pane fade">
+                    <div id="t17S" class="tab-pane fade <?php 
+                                          if((date("Y")== "2017") && (date("m")>="8") && (date("m")<="12")){
+    echo "active in";
+    }
+                                          ?>">
                          <?php EventsPost("2017","09","12");?>
                     </div>
                 </div>
