@@ -262,8 +262,17 @@ a:focus {
 
 /******   footer    ******/
 
-.footer {
+.wrapper{
     position: relative;
+    padding-bottom: 283px;
+    min-height: 100%;
+}
+
+.footer {
+    /*position: relative;*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     color: #a79b93;
     /*font-size: 8.75pt;*/
     font-size: 0.7319em;

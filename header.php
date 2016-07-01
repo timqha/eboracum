@@ -40,4 +40,5 @@
 <body>
 
 <span  id="page-top" ></span>
+<div class="wrapper">
 <?php //body_class(); ?>
