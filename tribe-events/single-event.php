@@ -156,14 +156,27 @@ $event_id = get_the_ID();
                                 <?php echo tribe_get_start_date($event_id, false, 'H.i ' ).tribe_get_end_date($event_id, false, '- H.i' );?>
                             </div>
 
-                            <div class="modal-place"><?php echo sp_get_venue($event_id).",  ".tribe_get_address($event_id).", ".tribe_get_city($event_id);?>
+                            <div class="modal-place"><?php echo sp_get_venue($event_id).",  ".tribe_get_address($event_id).", ".tribe_get_city($event_id);?><!-- Holy Trinity Church, Micklegate,<br>
+                                York, YO10 5CY -->
                             </div>
 <?php }?> 
                             <div class="row ticket">
                                <?php echo do_shortcode("[ticket event='".$event_id."']");?>
+<!--                                <div class="col-xs-1"><input class="number-ticket-modal" type="text" placeholder="0">-->
+<!--                                </div>-->
+<!--                                <div class="col-xs-10"><span>adult ticket - £12</span></div>-->
                             </div>
 
-
+<!--                            <div class="row ticket">-->
+<!--                                <div class="col-xs-1"><input class="number-ticket-modal" type="text" placeholder="0">-->
+<!--                                </div>-->
+<!--                                <div class="col-xs-10"><span>concession/nus ticket - £8</span></div>-->
+<!--                                -->
+<!--                            </div>-->
+<!---->
+<!--                            <button class="button-my-blue">-->
+<!--                                add to cart-->
+<!--                            </button>-->
                         </div>
                         <div class="col-xs-6">
                              <div class="imgwin">
