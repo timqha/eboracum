@@ -51,24 +51,24 @@
                         </div>
 
                     <?php }
-                }/* конец while */ ?>
+                }/* end while */ ?>
                 
 <?php 
 $cat = get_category( get_query_var( 'cat' ) );
 $category = $cat->slug;
 echo do_shortcode('[ajax_load_more post_type="post" category="our_news" pause="true" scroll="false"  offset="2" container_type="div"]');
 ?>
-<!--                <div class="row">-->
-<!--                    <div class="col-lg-12">-->
-<!--                        <div class="post-old"><a href="#">older posts ></a></div>-->
-<!--                    </div>-->
-<!--                </div>-->
+
             </div>
             <div class="col-lg-3">
 
                 <div class="col-lg-12">
-                    <?php get_sidebar(); ?>
-
+                   <?php if(!(get_category( get_query_var( 'cat' ) )=="Reviews")){
+   get_sidebar(); 
+}
+                    else{
+                        get_sidebar("reviews");
+                    }?>
                 </div>
             </div>
         </div>
